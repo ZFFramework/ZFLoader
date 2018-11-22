@@ -4,6 +4,7 @@ ZF_TYPE = app
 ZF_OUTPUT = ../..
 ZF_INPLACE = 1
 ZF_INPLACE_SRC = $ZF_NAME
+ZF_EXCLUDE += .travis.yml
 
 ZF_LIB += ZFCore
 ZF_LIB += ZFAlgorithm
@@ -19,8 +20,4 @@ ZF_IMPL += ZFAlgorithm_impl
 ZF_IMPL += ZFUIKit_impl
 ZF_IMPL += ZFLua_impl
 ZF_IMPL += ZFUIWebKit_impl
-
-# ZF_LIB_EXT += https://github.com/ZFFramework/ZFModuleDemo_lib ZFModuleDemo_lib master
-
-# ZF_IMPL_EXT += https://github.com/ZFFramework/ZFModuleDemo_impl
 
