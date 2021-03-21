@@ -193,7 +193,7 @@ static void _ZFP_ZFLuaLSPGenFile_class(ZF_IN const ZFOutput &output,
         zfstring paramList;
         for(zfindex i = 0; i < m->methodParamCount(); ++i)
         {
-            zfstring pN = zfstringWithFormat("p%zi", i);
+            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i)); // zfzfzf zfstringWithFormat("p%zi", i);
             zfstring tN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             output << "---@param " << pN << " " << tN << "\n";
             if(!paramList.isEmpty())
@@ -228,7 +228,7 @@ static void _ZFP_ZFLuaLSPGenFile_class(ZF_IN const ZFOutput &output,
         zfstring paramList;
         for(zfindex i = 0; i < m->methodParamCount(); ++i)
         {
-            zfstring pN = zfstringWithFormat("p%zi", i);
+            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i)); // zfzfzf zfstringWithFormat("p%zi", i);
             zfstring tN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             output << "---@param " << pN << " " << tN << "\n";
             if(!paramList.isEmpty())
@@ -295,7 +295,7 @@ static void _ZFP_ZFLuaLSPGenFile_allMethod(ZF_IN const ZFOutput &output)
         zfstring paramList;
         for(zfindex i = 0; i < m->methodParamCount(); ++i)
         {
-            zfstring pN = zfstringWithFormat("p%zi", i);
+            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i)); // zfzfzf zfstringWithFormat("p%zi", i);
             zfstring tN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             output << "---@param " << pN << " " << tN << "\n";
             if(!paramList.isEmpty())
@@ -336,12 +336,16 @@ static void _ZFP_ZFLuaLSPGenFile_spec(ZF_IN const ZFOutput &output)
         << "---@return _v_ZFPathInfo\n"
         << "function ZFLuaPathInfo() end\n"
 
-        << "function ZFLuaImport(p0, ...) end\n"
-        << "function ZFLuaImportOnce(p0, ...) end\n"
+        << "---@return _ZFObject\n"
+        << "function ZFLuaImport(localPath, ...) end\n"
+        << "---@return _ZFObject\n"
+        << "function ZFLuaImportOnce(localPath, ...) end\n"
+        << "---@return _ZFObject\n"
         << "function ZFLuaImportOnceReset() end\n"
+        << "function ZFLuaImportAll() end\n"
 
         << "---@return _ZFObject\n"
-        << "function ZFLuaRes(p0) end\n"
+        << "function ZFLuaRes(localPath) end\n"
         ;
 }
 
