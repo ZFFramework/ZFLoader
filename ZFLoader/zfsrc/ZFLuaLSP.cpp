@@ -193,7 +193,7 @@ static void _ZFP_ZFLuaLSPGenFile_class(ZF_IN const ZFOutput &output,
         zfstring paramList;
         for(zfindex i = 0; i < m->methodParamCount(); ++i)
         {
-            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i)); // zfzfzf zfstringWithFormat("p%zi", i);
+            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             zfstring tN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             output << "---@param " << pN << " " << tN << "\n";
             if(!paramList.isEmpty())
@@ -228,7 +228,7 @@ static void _ZFP_ZFLuaLSPGenFile_class(ZF_IN const ZFOutput &output,
         zfstring paramList;
         for(zfindex i = 0; i < m->methodParamCount(); ++i)
         {
-            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i)); // zfzfzf zfstringWithFormat("p%zi", i);
+            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             zfstring tN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             output << "---@param " << pN << " " << tN << "\n";
             if(!paramList.isEmpty())
@@ -295,7 +295,7 @@ static void _ZFP_ZFLuaLSPGenFile_allMethod(ZF_IN const ZFOutput &output)
         zfstring paramList;
         for(zfindex i = 0; i < m->methodParamCount(); ++i)
         {
-            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i)); // zfzfzf zfstringWithFormat("p%zi", i);
+            zfstring pN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             zfstring tN = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodParamTypeIdAtIndex(i));
             output << "---@param " << pN << " " << tN << "\n";
             if(!paramList.isEmpty())
