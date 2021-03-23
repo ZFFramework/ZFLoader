@@ -327,8 +327,13 @@ static void _ZFP_ZFLuaLSPGenFile_spec(ZF_IN const ZFOutput &output)
         << "---@return _v_ZFCoreArray\n"
         << "function ZFCoreArrayCreate(...) end\n"
 
+        << "---@param _v_zfstring _v_zfstring\n"
+        << "---@param _v_zfstring _v_zfstring\n"
+        << "function zfstringAppend(ret, fmt, ...) end\n"
+        << "---@param _v_zfstring _v_zfstring\n"
+        << "---@param _v_zfstring _v_zfstring\n"
         << "---@return _v_zfstring\n"
-        << "function zfstringAppend(...) end\n"
+        << "function zfstringWithFormat(fmt, ...) end\n"
 
         << "---@return _v_VoidPointer\n"
         << "function zfl_L(...) end\n"
@@ -346,6 +351,20 @@ static void _ZFP_ZFLuaLSPGenFile_spec(ZF_IN const ZFOutput &output)
 
         << "---@return _ZFObject\n"
         << "function ZFLuaRes(localPath) end\n"
+
+        << "---@param _v_zfstring\n"
+        << "function zfLog(fmt, ...) end\n"
+        << "---@param _v_zfstring\n"
+        << "function zfLogTrim(fmt, ...) end\n"
+
+        << "---@return _v_ZFOutput\n"
+        << "function zfLogT() end\n"
+        << "---@return _v_ZFOutput\n"
+        << "function zfLogTrimT() end\n"
+
+        << "---@return _v_zfstring\n"
+        << "function zfl_tableInfo(tbl) end\n"
+        << "function zfl_tableInfoPrint(tbl) end\n"
         ;
 }
 
