@@ -75,7 +75,6 @@ static void _ZFP_ZFLuaLSPGenFile_prefix(ZF_IN const ZFOutput &output)
 static zfstring _ZFP_ZFLuaLSPGenFile_typeIdToSig(ZF_IN const ZFClass *cls)
 {
     zfstring ret;
-    ret += "_";
     ret += cls->classNameFull();
     zfstringReplace(ret, ".", "_");
     return ret;
@@ -161,8 +160,9 @@ static void _ZFP_ZFLuaLSPGenFile_class(ZF_IN const ZFOutput &output,
 
     /* class
         NS.v_Cls = {}
-        _NS_Cls = _ZFP_ZFLuaLSP_Class(_Base)
-        ---@return _NS_Cls
+        ---@class NS_Cls : Base
+        NS_Cls = _ZFP_ZFLuaLSP_Class(Base)
+        ---@return NS_Cls
         function NS.v_Cls() end
      */
     zfstring classParentSig;
@@ -172,22 +172,24 @@ static void _ZFP_ZFLuaLSPGenFile_class(ZF_IN const ZFOutput &output,
     }
     output <<
         classNameFull << " = {}\n"
+        << "---@class " << classSig << (!classParentSig.isEmpty() ? ": " : "") << classParentSig << "\n"
         << classSig << " = _ZFP_ZFLuaLSP_Class(" << classParentSig << ")\n"
-        "---@return " << classSig << "\n"
-        "function " << classNameFull << "() end\n"
+        << "---@return " << classSig << "\n"
+        << "function " << classNameFull << "() end\n"
         ;
 
     /* constructor
-        ---@param p0 _P0
-        ---@return _NS_Cls
-        function NS.v_Cls(p0) end
+        ---@param P0 P0
+        ---@return NS_Cls
+        function NS.v_Cls(P0) end
      */
     ZFCoreArrayPOD<const ZFMethod *> ctorMethods = cls->methodForNameGetAll("objectOnInit");
     for(zfindex iMethod = 0; iMethod < ctorMethods.count(); ++iMethod)
     {
         const ZFMethod *m = ctorMethods[iMethod];
-        if(m->methodParamCount() == 0)
-        {
+        if(m->methodParamCount() == 0
+            || (m->methodOwnerClass() != cls && !m->methodOwnerClass()->classIsInterface())
+        ) {
             continue;
         }
         zfstring paramList;
@@ -213,16 +215,17 @@ static void _ZFP_ZFLuaLSPGenFile_class(ZF_IN const ZFOutput &output,
     {
         const ZFMethod *m = allMethod[iMethod];
         if(m->methodPrivilegeType() != ZFMethodPrivilegeTypePublic
+            || (m->methodOwnerClass() != cls && !m->methodOwnerClass()->classIsInterface())
             || zfscmpTheSame(m->methodName(), "objectOnInit")
             || zfsncmp(m->methodName(), "_ZFP_", zfslen("_ZFP_")) == 0)
         {
             continue;
         }
         /* member methods
-            ---@param p0 _P0
-            ---@return _Ret
-            function NS.v_Cls.Func(p0)
-            function _NS_Cls:Func(p0)
+            ---@param P0 P0
+            ---@return Ret
+            function NS.v_Cls.Func(P0)
+            function NS_Cls:Func(P0)
             end
          */
         zfstring paramList;
@@ -288,9 +291,9 @@ static void _ZFP_ZFLuaLSPGenFile_allMethod(ZF_IN const ZFOutput &output)
             continue;
         }
         /* global methods
-            ---@param p0 _P0
-            ---@return _Ret
-            function NS.Func(p0) end
+            ---@param P0 P0
+            ---@return Ret
+            function NS.Func(P0) end
          */
         zfstring paramList;
         for(zfindex i = 0; i < m->methodParamCount(); ++i)
@@ -324,45 +327,45 @@ static void _ZFP_ZFLuaLSPGenFile_allMethod(ZF_IN const ZFOutput &output)
 static void _ZFP_ZFLuaLSPGenFile_spec(ZF_IN const ZFOutput &output)
 {
     output
-        << "---@return _v_ZFCoreArray\n"
+        << "---@return v_ZFCoreArray\n"
         << "function ZFCoreArrayCreate(...) end\n"
 
-        << "---@param _v_zfstring _v_zfstring\n"
-        << "---@param _v_zfstring _v_zfstring\n"
+        << "---@param v_zfstring v_zfstring\n"
+        << "---@param v_zfstring v_zfstring\n"
         << "function zfstringAppend(ret, fmt, ...) end\n"
-        << "---@param _v_zfstring _v_zfstring\n"
-        << "---@param _v_zfstring _v_zfstring\n"
-        << "---@return _v_zfstring\n"
+        << "---@param v_zfstring v_zfstring\n"
+        << "---@param v_zfstring v_zfstring\n"
+        << "---@return v_zfstring\n"
         << "function zfstringWithFormat(fmt, ...) end\n"
 
-        << "---@return _v_VoidPointer\n"
+        << "---@return v_VoidPointer\n"
         << "function zfl_L(...) end\n"
 
-        << "---@return _v_ZFPathInfo\n"
+        << "---@return v_ZFPathInfo\n"
         << "function ZFLuaPathInfo() end\n"
 
-        << "---@return _ZFObject\n"
+        << "---@return ZFObject\n"
         << "function ZFLuaImport(localPath, ...) end\n"
-        << "---@return _ZFObject\n"
+        << "---@return ZFObject\n"
         << "function ZFLuaImportOnce(localPath, ...) end\n"
-        << "---@return _ZFObject\n"
+        << "---@return ZFObject\n"
         << "function ZFLuaImportOnceReset() end\n"
         << "function ZFLuaImportAll() end\n"
 
-        << "---@return _ZFObject\n"
+        << "---@return ZFObject\n"
         << "function ZFLuaRes(localPath) end\n"
 
-        << "---@param _v_zfstring\n"
+        << "---@param v_zfstring\n"
         << "function zfLog(fmt, ...) end\n"
-        << "---@param _v_zfstring\n"
+        << "---@param v_zfstring\n"
         << "function zfLogTrim(fmt, ...) end\n"
 
-        << "---@return _v_ZFOutput\n"
+        << "---@return v_ZFOutput\n"
         << "function zfLogT() end\n"
-        << "---@return _v_ZFOutput\n"
+        << "---@return v_ZFOutput\n"
         << "function zfLogTrimT() end\n"
 
-        << "---@return _v_zfstring\n"
+        << "---@return v_zfstring\n"
         << "function zfl_tableInfo(tbl) end\n"
         << "function zfl_tableInfoPrint(tbl) end\n"
         ;
