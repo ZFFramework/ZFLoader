@@ -338,7 +338,7 @@ static void _ZFP_ZFLuaLSPGenFile_spec(ZF_IN const ZFOutput &output)
         << "---@return v_zfstring\n"
         << "function zfstringWithFormat(fmt, ...) end\n"
 
-        << "---@return v_VoidPointer\n"
+        << "---@return v_ZFPtr\n"
         << "function zfl_L(...) end\n"
 
         << "---@return v_ZFPathInfo\n"
