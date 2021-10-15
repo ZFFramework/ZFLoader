@@ -245,6 +245,14 @@ static void _ZFP_ZFLuaLSPGenFile_class(ZF_IN const ZFOutput &output,
             zfstring retSig = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodReturnTypeId());
             output << "---@return " << retSig << "\n";
         }
+        else
+        {
+            if(m->methodType() != ZFMethodTypeStatic)
+            {
+                zfstring retSig = _ZFP_ZFLuaLSPGenFile_typeIdToSig(m->methodOwnerClass());
+                output << "---@return " << retSig << "\n";
+            }
+        }
         zfstring funcPrefix;
         if(m->methodType() == ZFMethodTypeStatic)
         {
