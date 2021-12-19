@@ -5,14 +5,14 @@
 
 ZFMAIN_ENTRY()
 {
-    ZFCoreArray<zfstring> extResList;
-    extResList.add(ZFFilePathForModule());
-    extResList.add(ZFFilePathForStorageShared());
+    ZFCoreArray<ZFPathInfo> extResList;
+    extResList.add(ZFPathInfo(ZFPathType_file(), ZFFilePathForModule()));
+    extResList.add(ZFPathInfo(ZFPathType_file(), ZFFilePathForStorageShared()));
 
     zfLogTrimT() << "external res:" << extResList;
     for(zfindex i = 0; i < extResList.count(); ++i)
     {
-        ZFFileResAdditionalPathAdd(extResList[i]);
+        ZFFileResExtPathAdd(extResList[i]);
     }
 
     ZFLuaExecute(ZFInputForResFile("zf.lua"));
