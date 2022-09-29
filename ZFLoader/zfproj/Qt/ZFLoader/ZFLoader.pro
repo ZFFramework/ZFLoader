@@ -119,6 +119,7 @@ $$ZFAddLib(1, ZFUIWebKit_impl)
 # ======================================================================
 # Qt modules
 # QT += gui widgets
+# QT += network
 # qtHaveModule(webenginewidgets) {QT += webenginewidgets} else {qtHaveModule(webkitwidgets) : QT += webkitwidgets}
 QT += gui widgets
 qtHaveModule(webenginewidgets) {QT += webenginewidgets} else {qtHaveModule(webkitwidgets) : QT += webkitwidgets}
