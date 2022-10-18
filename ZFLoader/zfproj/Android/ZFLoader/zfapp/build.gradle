@@ -58,12 +58,14 @@ dependencies {
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIWidget/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFLua/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIWebKit/src/main/libs', includes: ['*.jar'])
+    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFNet/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZF_impl/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFCore_impl/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFAlgorithm_impl/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit_impl/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFLua_impl/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIWebKit_impl/src/main/libs', includes: ['*.jar'])
+    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFNet_impl/src/main/libs', includes: ['*.jar'])
 }
 
 import org.apache.tools.ant.taskdefs.condition.Os
@@ -119,12 +121,14 @@ task ZFSetup {
         ZFCopyRes('ZFUIWidget')
         ZFCopyRes('ZFLua')
         ZFCopyRes('ZFUIWebKit')
+        ZFCopyRes('ZFNet')
         ZFCopyRes('ZF_impl')
         ZFCopyRes('ZFCore_impl')
         ZFCopyRes('ZFAlgorithm_impl')
         ZFCopyRes('ZFUIKit_impl')
         ZFCopyRes('ZFLua_impl')
         ZFCopyRes('ZFUIWebKit_impl')
+        ZFCopyRes('ZFNet_impl')
     }
 }
 preBuild.dependsOn ZFSetup

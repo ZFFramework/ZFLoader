@@ -47,6 +47,7 @@ android {
             java.srcDirs += ZF_ROOT_PATH + '/ZF/ZFUIKit_impl/zfsrc/ZFImpl/sys_Android/java'
             java.srcDirs += ZF_ROOT_PATH + '/ZF/ZFLua_impl/zfsrc/ZFImpl/sys_Android/java'
             java.srcDirs += ZF_ROOT_PATH + '/ZF/ZFUIWebKit_impl/zfsrc/ZFImpl/sys_Android/java'
+            java.srcDirs += ZF_ROOT_PATH + '/ZF/ZFNet_impl/zfsrc/ZFImpl/sys_Android/java'
         }
     }
     externalNativeBuild {
@@ -105,12 +106,14 @@ task ZFSetup {
         ZFCopyRes(ZF_ROOT_PATH, 'ZFUIWidget')
         ZFCopyRes(ZF_ROOT_PATH, 'ZFLua')
         ZFCopyRes(ZF_ROOT_PATH, 'ZFUIWebKit')
+        ZFCopyRes(ZF_ROOT_PATH, 'ZFNet')
         ZFCopyRes(ZF_ROOT_PATH, 'ZF_impl')
         ZFCopyRes(ZF_ROOT_PATH, 'ZFCore_impl')
         ZFCopyRes(ZF_ROOT_PATH, 'ZFAlgorithm_impl')
         ZFCopyRes(ZF_ROOT_PATH, 'ZFUIKit_impl')
         ZFCopyRes(ZF_ROOT_PATH, 'ZFLua_impl')
         ZFCopyRes(ZF_ROOT_PATH, 'ZFUIWebKit_impl')
+        ZFCopyRes(ZF_ROOT_PATH, 'ZFNet_impl')
     }
 }
 preBuild.dependsOn ZFSetup

@@ -21,12 +21,14 @@ sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFUIKit.mm
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFUIWidget.mm" "$ZF_ROOT_PATH/ZF/ZFUIWidget/zfsrc"
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFLua.mm" "$ZF_ROOT_PATH/ZF/ZFLua/zfsrc"
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFUIWebKit.mm" "$ZF_ROOT_PATH/ZF/ZFUIWebKit/zfsrc"
+sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFNet.mm" "$ZF_ROOT_PATH/ZF/ZFNet/zfsrc"
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZF_impl.mm" "$ZF_ROOT_PATH/ZF/ZF_impl/zfsrc"
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFCore_impl.mm" "$ZF_ROOT_PATH/ZF/ZFCore_impl/zfsrc"
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFAlgorithm_impl.mm" "$ZF_ROOT_PATH/ZF/ZFAlgorithm_impl/zfsrc"
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFUIKit_impl.mm" "$ZF_ROOT_PATH/ZF/ZFUIKit_impl/zfsrc"
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFLua_impl.mm" "$ZF_ROOT_PATH/ZF/ZFLua_impl/zfsrc"
 sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFUIWebKit_impl.mm" "$ZF_ROOT_PATH/ZF/ZFUIWebKit_impl/zfsrc"
+sh $ZF_TOOLS_PATH/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFNet_impl.mm" "$ZF_ROOT_PATH/ZF/ZFNet_impl/zfsrc"
 
 RES_DST_PATH=${iOS_CONFIGURATION_BUILD_DIR}/${iOS_CONTENTS_FOLDER_PATH}/zfres
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "${iOS_SRCROOT}/../../../zfres" "$RES_DST_PATH"
@@ -38,10 +40,12 @@ sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFUIKit/zfres" "$RES_DST_
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFUIWidget/zfres" "$RES_DST_PATH"
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFLua/zfres" "$RES_DST_PATH"
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFUIWebKit/zfres" "$RES_DST_PATH"
+sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFNet/zfres" "$RES_DST_PATH"
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZF_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFCore_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFAlgorithm_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFUIKit_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFLua_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFUIWebKit_impl/zfres" "$RES_DST_PATH"
+sh "$ZF_TOOLS_PATH/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFNet_impl/zfres" "$RES_DST_PATH"
 

@@ -106,12 +106,14 @@ $$ZFAddLib(0, ZFUIKit)
 $$ZFAddLib(0, ZFUIWidget)
 $$ZFAddLib(0, ZFLua)
 $$ZFAddLib(0, ZFUIWebKit)
+$$ZFAddLib(0, ZFNet)
 $$ZFAddLib(1, ZF_impl)
 $$ZFAddLib(1, ZFCore_impl)
 $$ZFAddLib(1, ZFAlgorithm_impl)
 $$ZFAddLib(1, ZFUIKit_impl)
 $$ZFAddLib(1, ZFLua_impl)
 $$ZFAddLib(1, ZFUIWebKit_impl)
+$$ZFAddLib(1, ZFNet_impl)
 
 
 # ======================================================================
@@ -123,6 +125,7 @@ $$ZFAddLib(1, ZFUIWebKit_impl)
 # qtHaveModule(webenginewidgets) {QT += webenginewidgets} else {qtHaveModule(webkitwidgets) : QT += webkitwidgets}
 QT += gui widgets
 qtHaveModule(webenginewidgets) {QT += webenginewidgets} else {qtHaveModule(webkitwidgets) : QT += webkitwidgets}
+QT += network
 
 
 # ======================================================================

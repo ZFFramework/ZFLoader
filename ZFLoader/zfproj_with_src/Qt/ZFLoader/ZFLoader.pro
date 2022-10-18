@@ -106,12 +106,14 @@ $$ZFAddLib($${ZF_ROOT_PATH}, 0, ZFUIKit)
 $$ZFAddLib($${ZF_ROOT_PATH}, 0, ZFUIWidget)
 $$ZFAddLib($${ZF_ROOT_PATH}, 0, ZFLua)
 $$ZFAddLib($${ZF_ROOT_PATH}, 0, ZFUIWebKit)
+$$ZFAddLib($${ZF_ROOT_PATH}, 0, ZFNet)
 $$ZFAddLib($${ZF_ROOT_PATH}, 1, ZF_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}, 1, ZFCore_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}, 1, ZFAlgorithm_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}, 1, ZFUIKit_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}, 1, ZFLua_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}, 1, ZFUIWebKit_impl)
+$$ZFAddLib($${ZF_ROOT_PATH}, 1, ZFNet_impl)
 
 
 # ======================================================================
@@ -123,6 +125,7 @@ $$ZFAddLib($${ZF_ROOT_PATH}, 1, ZFUIWebKit_impl)
 # qtHaveModule(webenginewidgets) {QT += webenginewidgets} else {qtHaveModule(webkitwidgets) : QT += webkitwidgets}
 QT += gui widgets
 qtHaveModule(webenginewidgets) {QT += webenginewidgets} else {qtHaveModule(webkitwidgets) : QT += webkitwidgets}
+QT += network
 
 
 # ======================================================================

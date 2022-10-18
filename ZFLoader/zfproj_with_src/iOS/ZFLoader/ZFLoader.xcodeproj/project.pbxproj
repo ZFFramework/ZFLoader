@@ -21,11 +21,13 @@
 		598D2BFC828D804AE3417F956A125E00 /* zfgensrc_ZFUIWebKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EA53C4DE67EB74841704C4AE2EB1B4C /* zfgensrc_ZFUIWebKit.mm */; };
 		62E30AC56E7C17154A012E80BBBA7E17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23775675371E613A438268BC6381CB56 /* QuartzCore.framework */; };
 		63BC00F3EB5240EC9DE264DAB9A00339 /* zfgensrc_ZFLua.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A76602BF0CF382279D32D1404B30568 /* zfgensrc_ZFLua.mm */; };
+		662A56198EAF0FB2A0BD9B1EDD9B3AC0 /* zfgensrc_ZFNet.mm in Sources */ = {isa = PBXBuildFile; fileRef = F29764ED5AB1AD12432ED31500481FD5 /* zfgensrc_ZFNet.mm */; };
 		74594D7BBB66E2DD7C14BB8434633F76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48034E24D59344F93D45AC9663EE3AF3 /* UIKit.framework */; };
 		7B6D422475313BE61A82D56488909E25 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07FA48E4A67234AB68E10B90222C4D82 /* AppDelegate.mm */; };
 		8AE0418DB3F93E013CFCBBE14B106F62 /* zfgensrc_ZF_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8169CC68B66DEB7AE2ABA5DEF9F64705 /* zfgensrc_ZF_impl.mm */; };
 		91B916D527414B768CB44587608D673C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */; };
 		A8BBBD902629523A4B8D3110A50CBD02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A47A52EB08A3025D7E43B9ABF8EBB416 /* Default-568h@2x.png */; };
+		B6408091053BB2101FB5FF4C297A9E03 /* zfgensrc_ZFNet_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = D043487A830593CD0CF3BA1288F5D206 /* zfgensrc_ZFNet_impl.mm */; };
 		B97D99AB2FB07ABAC46DC3DAEBD5D29F /* zfgensrc_ZFCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 352221B9B45E95226378758EE5C1291D /* zfgensrc_ZFCore.mm */; };
 		C43386EB3EDBCD24828A71E2CC1327DF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2781CB6363E8F9340804D253A7C469D9 /* Icon.png */; };
 		CCC2CE54EC3B8429A5B0BEFF35DE59AA /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF8439FB1820A22FF4C35FA2F1FF71C /* Icon-29.png */; };
@@ -67,11 +69,13 @@
 		AFCBF8AAE07BF5B7DD5C2E81DA39AD89 /* zfgensrc_ZFUIKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIKit.mm; sourceTree = "<group>"; };
 		BF00779897D90216B17958436DD03AD5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		CB7ED04F4BB870BD4F731D7B3B04F220 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D043487A830593CD0CF3BA1288F5D206 /* zfgensrc_ZFNet_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFNet_impl.mm; sourceTree = "<group>"; };
 		D840F5E3163DB6867ECC7F1724EC17C9 /* zfgensrc_ZFLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFLoader.mm; sourceTree = "<group>"; };
 		D895A3DB6D26F7CA485E0DA733C8F03C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F208FB312AC07704841F43CFDF71B184 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F29764ED5AB1AD12432ED31500481FD5 /* zfgensrc_ZFNet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFNet.mm; sourceTree = "<group>"; };
 		FC5C538CE23709F426094AE05106B9C4 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		FD842C5752031A1B7F1060C6706F99A7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,8 @@
 				D840F5E3163DB6867ECC7F1724EC17C9 /* zfgensrc_ZFLoader.mm */,
 				4A76602BF0CF382279D32D1404B30568 /* zfgensrc_ZFLua.mm */,
 				76155D12EFD095B56BC13095419BC25F /* zfgensrc_ZFLua_impl.mm */,
+				F29764ED5AB1AD12432ED31500481FD5 /* zfgensrc_ZFNet.mm */,
+				D043487A830593CD0CF3BA1288F5D206 /* zfgensrc_ZFNet_impl.mm */,
 				AFCBF8AAE07BF5B7DD5C2E81DA39AD89 /* zfgensrc_ZFUIKit.mm */,
 				4C6DF9C20E8F0B9CE6A2D6A1B83CD1DA /* zfgensrc_ZFUIKit_impl.mm */,
 				0EA53C4DE67EB74841704C4AE2EB1B4C /* zfgensrc_ZFUIWebKit.mm */,
@@ -256,12 +262,14 @@
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFUIWidget.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFLua.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFUIWebKit.mm",
+				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFNet.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZF_impl.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFCore_impl.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFAlgorithm_impl.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFUIKit_impl.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFLua_impl.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFUIWebKit_impl.mm",
+				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFNet_impl.mm",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -298,6 +306,8 @@
 				F5D8ABA92A4BE51070ACDB7E8A63637C /* zfgensrc_ZFLoader.mm in Sources */,
 				63BC00F3EB5240EC9DE264DAB9A00339 /* zfgensrc_ZFLua.mm in Sources */,
 				F74D08C6B5855928CD03446C932581B6 /* zfgensrc_ZFLua_impl.mm in Sources */,
+				662A56198EAF0FB2A0BD9B1EDD9B3AC0 /* zfgensrc_ZFNet.mm in Sources */,
+				B6408091053BB2101FB5FF4C297A9E03 /* zfgensrc_ZFNet_impl.mm in Sources */,
 				0020F1D4E159134CEB5A6235F94C7EAC /* zfgensrc_ZFUIKit.mm in Sources */,
 				CDCA05A147DBF085D17A2A4A40132830 /* zfgensrc_ZFUIKit_impl.mm in Sources */,
 				598D2BFC828D804AE3417F956A125E00 /* zfgensrc_ZFUIWebKit.mm in Sources */,
@@ -397,12 +407,14 @@
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWidget/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFLua/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWebKit/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFNet/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZF_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFCore_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFAlgorithm_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIKit_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFLua_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWebKit_impl/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFNet_impl/zfsrc",
 				);
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};
@@ -488,12 +500,14 @@
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWidget/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFLua/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWebKit/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFNet/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZF_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFCore_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFAlgorithm_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIKit_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFLua_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWebKit_impl/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFNet_impl/zfsrc",
 				);
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};

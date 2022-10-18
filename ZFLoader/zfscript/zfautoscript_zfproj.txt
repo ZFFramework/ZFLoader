@@ -13,6 +13,7 @@ ZF_LIB += ZFUIKit
 ZF_LIB += ZFUIWidget
 ZF_LIB += ZFLua
 ZF_LIB += ZFUIWebKit
+ZF_LIB += ZFNet
 
 ZF_IMPL += ZF_impl
 ZF_IMPL += ZFCore_impl
@@ -20,4 +21,5 @@ ZF_IMPL += ZFAlgorithm_impl
 ZF_IMPL += ZFUIKit_impl
 ZF_IMPL += ZFLua_impl
 ZF_IMPL += ZFUIWebKit_impl
+ZF_IMPL += ZFNet_impl
 
