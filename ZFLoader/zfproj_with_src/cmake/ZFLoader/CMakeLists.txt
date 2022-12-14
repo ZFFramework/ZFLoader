@@ -1,7 +1,13 @@
-cmake_minimum_required(VERSION 3.4.1)
+cmake_minimum_required(VERSION 3.17)
 project(ZFLoader)
 
-set(ZF_ROOT_PATH ${PROJECT_SOURCE_DIR}/../../../../../../ZFFramework)
+set(ZF_ROOT_PATH ${PROJECT_SOURCE_DIR}/../../../../../ZFFramework)
+
+if(WIN32)
+    execute_process(COMMAND ${ZF_ROOT_PATH}/zfsetup.bat)
+else()
+    execute_process(COMMAND ${ZF_ROOT_PATH}/zfsetup.sh)
+endif()
 
 function(ZFAddSrc ZF_SRC_FILES_ PROJ_PATH_)
     file(GLOB_RECURSE srcfiles RELATIVE ${PROJECT_SOURCE_DIR}
@@ -13,10 +19,15 @@ function(ZFAddSrc ZF_SRC_FILES_ PROJ_PATH_)
     set(${ZF_SRC_FILES_} ${${ZF_SRC_FILES_}} ${srcfiles} PARENT_SCOPE)
 
     include_directories(${PROJ_PATH_}/zfsrc)
+
+    if(WIN32)
+        execute_process(COMMAND "${ZF_ROOT_PATH}/tools/util/copy_res.bat" "${PROJ_PATH_}/zfres/" "${PROJECT_BINARY_DIR}/zfres")
+    else()
+        execute_process(COMMAND "${ZF_ROOT_PATH}/tools/util/copy_res.sh" "${PROJ_PATH_}/zfres/" "${PROJECT_BINARY_DIR}/zfres")
+    endif()
 endfunction(ZFAddSrc)
 
-
-ZFAddSrc(ZF_SRC_FILES ${PROJECT_SOURCE_DIR}/../../../..)
+ZFAddSrc(ZF_SRC_FILES ${PROJECT_SOURCE_DIR}/../../..)
 
 ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFCore)
 ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFAlgorithm)
@@ -34,9 +45,6 @@ ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFLua_impl)
 ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFUIWebKit_impl)
 ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFNet_impl)
 
-add_library(ZFLoader SHARED ${ZF_SRC_FILES})
+add_executable(ZFLoader ${ZF_SRC_FILES})
 set_target_properties(ZFLoader PROPERTIES LINKER_LANGUAGE CXX)
-find_library(log-lib log)
-find_library(android-lib android)
-target_link_libraries(ZFLoader ${android-lib} ${log-lib})
 
