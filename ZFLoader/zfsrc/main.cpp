@@ -15,7 +15,7 @@ ZFMAIN_ENTRY()
         ZFFileResExtPathAdd(extResList[i]);
     }
 
-    ZFLuaExecute(ZFInputForResFile("zf.lua"));
+    ZFLuaExecute(ZFInputForRes("zf.lua"));
     ZFLuaGC();
 }
 
