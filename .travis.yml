@@ -19,8 +19,8 @@ matrix:
       - yes | ${ANDROID_HOME}/tools/bin/sdkmanager "extras;google;m2repository" > /dev/null 2>&1
       - yes | ${ANDROID_HOME}/tools/bin/sdkmanager "ndk-bundle" > /dev/null 2>&1
       # build
-      - chmod +x ../ZFFramework/master/ZF_CI/testbuild/testbuild_Android.sh
-      - ../ZFFramework/master/ZF_CI/testbuild/testbuild_Android.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}/Android/${ZF_PROJ_NAME}
+      - chmod +x ../ZFFramework/tools/buildapp/buildapp_Android.sh
+      - ../ZFFramework/tools/buildapp/buildapp_Android.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}
 
   - language: android
     env:
@@ -40,8 +40,8 @@ matrix:
       - yes | ${ANDROID_HOME}/tools/bin/sdkmanager "extras;google;m2repository" > /dev/null 2>&1
       - yes | ${ANDROID_HOME}/tools/bin/sdkmanager "ndk-bundle" > /dev/null 2>&1
       # build
-      - chmod +x ../ZFFramework/master/ZF_CI/testbuild/testbuild_Android.sh
-      - ../ZFFramework/master/ZF_CI/testbuild/testbuild_Android.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}/Android/${ZF_PROJ_NAME}
+      - chmod +x ../ZFFramework/tools/buildapp/buildapp_Android.sh
+      - ../ZFFramework/tools/buildapp/buildapp_Android.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}
       - chmod +x ../ZFFramework/master/ZF_CI/upload_app.sh
       - ../ZFFramework/master/ZF_CI/upload_app.sh "${ZF_PROJ_PATH}/Android/${ZF_PROJ_NAME}/zfapp/build/outputs/apk/release/zfapp-release.apk" "${ZF_PROJ_NAME}.apk"
 
@@ -51,8 +51,8 @@ matrix:
         ZF_PROJ_PATH=ZFLoader/zfproj_with_src;
         ZF_PROJ_NAME=ZFLoader;
     script:
-      - chmod +x ../ZFFramework/master/ZF_CI/testbuild/testbuild_iOS.sh
-      - ../ZFFramework/master/ZF_CI/testbuild/testbuild_iOS.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}/iOS/${ZF_PROJ_NAME}
+      - chmod +x ../ZFFramework/tools/buildapp/buildapp_iOS.sh
+      - ../ZFFramework/tools/buildapp/buildapp_iOS.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}
 
   - language: objective-c
     env:
@@ -60,8 +60,8 @@ matrix:
         ZF_PROJ_PATH=ZFLoader/zfproj;
         ZF_PROJ_NAME=ZFLoader;
     script:
-      - chmod +x ../ZFFramework/master/ZF_CI/testbuild/testbuild_iOS.sh
-      - ../ZFFramework/master/ZF_CI/testbuild/testbuild_iOS.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}/iOS/${ZF_PROJ_NAME}
+      - chmod +x ../ZFFramework/tools/buildapp/buildapp_iOS.sh
+      - ../ZFFramework/tools/buildapp/buildapp_iOS.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}
 
   - language: cpp
     env:
@@ -71,8 +71,8 @@ matrix:
     os: linux
     compiler: gcc
     script:
-      - chmod +x ../ZFFramework/master/ZF_CI/testbuild/testbuild_Qt_Posix.sh
-      - ../ZFFramework/master/ZF_CI/testbuild/testbuild_Qt_Posix.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}/Qt/${ZF_PROJ_NAME}
+      - chmod +x ../ZFFramework/tools/buildapp/buildapp_Qt_Posix.sh
+      - ../ZFFramework/tools/buildapp/buildapp_Qt_Posix.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}
 
   - language: cpp
     env:
@@ -82,8 +82,8 @@ matrix:
     os: linux
     compiler: gcc
     script:
-      - chmod +x ../ZFFramework/master/ZF_CI/testbuild/testbuild_Qt_Posix.sh
-      - ../ZFFramework/master/ZF_CI/testbuild/testbuild_Qt_Posix.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}/Qt/${ZF_PROJ_NAME}
+      - chmod +x ../ZFFramework/tools/buildapp/buildapp_Qt_Posix.sh
+      - ../ZFFramework/tools/buildapp/buildapp_Qt_Posix.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}
 
   - language: cpp
     env:
@@ -93,8 +93,8 @@ matrix:
     os: osx
     compiler: clang
     script:
-      - chmod +x ../ZFFramework/master/ZF_CI/testbuild/testbuild_Qt_MacOS.sh
-      - ../ZFFramework/master/ZF_CI/testbuild/testbuild_Qt_MacOS.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}/Qt/${ZF_PROJ_NAME}
+      - chmod +x ../ZFFramework/tools/buildapp/buildapp_Qt_MacOS.sh
+      - ../ZFFramework/tools/buildapp/buildapp_Qt_MacOS.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}
 
   - language: cpp
     env:
@@ -104,8 +104,8 @@ matrix:
     os: osx
     compiler: clang
     script:
-      - chmod +x ../ZFFramework/master/ZF_CI/testbuild/testbuild_Qt_MacOS.sh
-      - ../ZFFramework/master/ZF_CI/testbuild/testbuild_Qt_MacOS.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}/Qt/${ZF_PROJ_NAME}
+      - chmod +x ../ZFFramework/tools/buildapp/buildapp_Qt_MacOS.sh
+      - ../ZFFramework/tools/buildapp/buildapp_Qt_MacOS.sh ${ZF_PROJ_NAME} ${ZF_PROJ_PATH}
 
 
 install:
