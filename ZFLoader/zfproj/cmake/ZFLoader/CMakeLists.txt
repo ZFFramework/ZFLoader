@@ -13,10 +13,13 @@ file(GLOB_RECURSE srcfiles RELATIVE ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/../../../zfsrc_ext/*.cpp
     )
 include("${PROJECT_SOURCE_DIR}/zfprojConfig.cmake" OPTIONAL)
-if(DEFINED zfprojConfig)
-    zfprojConfig(ZFLoader srcfiles)
+if(COMMAND zfprojConfigBefore_ZFLoader)
+    zfprojConfigBefore_ZFLoader(ZFLoader srcfiles)
 endif()
 add_executable(ZFLoader ${srcfiles})
+if(COMMAND zfprojConfigAfter_ZFLoader)
+    zfprojConfigAfter_ZFLoader(ZFLoader)
+endif()
 set_target_properties(ZFLoader PROPERTIES LINKER_LANGUAGE CXX)
 
 include_directories(${PROJECT_SOURCE_DIR}/../../../zfsrc)
