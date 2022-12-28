@@ -3,6 +3,7 @@ project(ZFLoader)
 message("Build with type: ${CMAKE_BUILD_TYPE}, path: ${PROJECT_SOURCE_DIR}")
 
 set(ZF_ROOT_PATH ${PROJECT_SOURCE_DIR}/../../../../../ZFFramework)
+include("${ZF_ROOT_PATH}/tools/spec/cmake/util.cmake")
 
 if(WIN32)
     execute_process(COMMAND "${ZF_ROOT_PATH}/zfsetup.bat")
@@ -51,8 +52,9 @@ if(COMMAND zfprojConfigBefore_ZFLoader)
     zfprojConfigBefore_ZFLoader(ZFLoader ZF_SRC_FILES)
 endif()
 add_executable(ZFLoader ${ZF_SRC_FILES})
+strip_file_macro(ZFLoader)
+set_target_properties(ZFLoader PROPERTIES LINKER_LANGUAGE CXX)
 if(COMMAND zfprojConfigAfter_ZFLoader)
     zfprojConfigAfter_ZFLoader(ZFLoader)
 endif()
-set_target_properties(ZFLoader PROPERTIES LINKER_LANGUAGE CXX)
 

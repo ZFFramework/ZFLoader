@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.4.1)
 project(ZFLoader)
 
 set(ZF_ROOT_PATH ${PROJECT_SOURCE_DIR}/../../../../../../ZFFramework)
+include("${ZF_ROOT_PATH}/tools/spec/cmake/util.cmake")
 
 file(GLOB_RECURSE srcfiles RELATIVE ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/../../../../zfsrc/*.c
@@ -10,6 +11,7 @@ file(GLOB_RECURSE srcfiles RELATIVE ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/../../../../zfsrc_ext/*.cpp
     )
 add_library(ZFLoader SHARED ${srcfiles})
+strip_file_macro(ZFLoader)
 set_target_properties(ZFLoader PROPERTIES LINKER_LANGUAGE CXX)
 
 find_library(log-lib log)
@@ -24,7 +26,6 @@ function(ZFAddLib ZF_LIB_NAME_)
     set_target_properties(${ZF_LIB_NAME_} PROPERTIES IMPORTED_LOCATION ${ZF_ROOT_PATH}/_release/Android/all/src/main/jniLibs/${ANDROID_ABI}/lib${ZF_LIB_NAME_}.so)
     target_link_libraries(ZFLoader ${ZF_LIB_NAME_})
 endfunction(ZFAddLib)
-
 
 ZFAddLib(ZFCore)
 ZFAddLib(ZFAlgorithm)
