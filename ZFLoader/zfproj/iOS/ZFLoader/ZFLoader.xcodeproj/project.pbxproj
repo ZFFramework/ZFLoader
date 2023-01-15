@@ -30,6 +30,7 @@
 		B4375569C2D91698C2FFF4FEE3CA07B8 /* ZFAlgorithm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A820E93FE83B0298F8720C3C0119F25 /* ZFAlgorithm.xcframework */; };
 		C43386EB3EDBCD24828A71E2CC1327DF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2781CB6363E8F9340804D253A7C469D9 /* Icon.png */; };
 		C790CF3361A67F7410BEC36823333EAF /* ZFUIWidget.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFA000A39C35D5B2440D017460AAAA /* ZFUIWidget.xcframework */; };
+		CC9935375FA55E84B2732E787398D5B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9AD230AA3677D00BBF3775C1600626 /* AVFoundation.framework */; };
 		CCC2CE54EC3B8429A5B0BEFF35DE59AA /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF8439FB1820A22FF4C35FA2F1FF71C /* Icon-29.png */; };
 		CDCD22EB980A6F3069EDA3F4BF638B04 /* ZFCore_impl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544B881A803F319C8838E11941B4F889 /* ZFCore_impl.xcframework */; };
 		E288BCAB6574BD590D61FCE2F0E0B495 /* ZFLua_impl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445E9E680BA83664ED776E3DEADBE742 /* ZFLua_impl.xcframework */; };
@@ -62,6 +63,7 @@
 		7F63C9283BE4557967B3B7E62A45F542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		973E76CEE3B1036ED5A40746AFB1BC04 /* ZFAlgorithm_impl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFAlgorithm_impl.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFAlgorithm_impl.xcframework; sourceTree = "<group>"; };
 		9A820E93FE83B0298F8720C3C0119F25 /* ZFAlgorithm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFAlgorithm.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFAlgorithm.xcframework; sourceTree = "<group>"; };
+		9D9AD230AA3677D00BBF3775C1600626 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9FF8439FB1820A22FF4C35FA2F1FF71C /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		A360A8B94D14E6BEEF2DE0D9EBF265D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A47A52EB08A3025D7E43B9ABF8EBB416 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9935375FA55E84B2732E787398D5B6 /* AVFoundation.framework in Frameworks */,
 				91B916D527414B768CB44587608D673C /* CoreGraphics.framework in Frameworks */,
 				09D0F71522F82E9852D067FCE8430FB2 /* Foundation.framework in Frameworks */,
 				62E30AC56E7C17154A012E80BBBA7E17 /* QuartzCore.framework in Frameworks */,
@@ -124,6 +127,7 @@
 		0AC713D3C3A88A14843BD1A289E7C5D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D9AD230AA3677D00BBF3775C1600626 /* AVFoundation.framework */,
 				DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */,
 				7F63C9283BE4557967B3B7E62A45F542 /* Foundation.framework */,
 				23775675371E613A438268BC6381CB56 /* QuartzCore.framework */,
