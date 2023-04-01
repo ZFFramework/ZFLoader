@@ -41,7 +41,7 @@ ZF_GLOBAL_INITIALIZER_INIT(LuaRunner)
             }
             ZFLuaExecute(ZFInputForPathInfo(pathInfo), &luaParams);
         }
-    } ZFLISTENER_END(action)
+    } ZFLISTENER_END()
     this->callback = action;
     ZFGlobalObserver().observerAdd(ZFApp::EventAppParamDispatch(), this->callback);
 }
