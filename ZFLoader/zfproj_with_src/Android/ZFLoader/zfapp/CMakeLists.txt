@@ -35,7 +35,7 @@ ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFUIWebKit_impl)
 ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFNet_impl)
 
 add_library(ZFLoader SHARED ${ZF_SRC_FILES})
-strip_file_macro(ZFLoader)
+zfprojStripFILE(ZFLoader)
 set_target_properties(ZFLoader PROPERTIES LINKER_LANGUAGE CXX)
 
 find_library(log-lib log)
