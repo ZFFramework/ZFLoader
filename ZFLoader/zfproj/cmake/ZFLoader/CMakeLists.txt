@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.0.0)
+project(ZFLoader)
 set(ZF_ROOT_PATH "${PROJECT_SOURCE_DIR}/../../../../../ZFFramework")
 include("${PROJECT_SOURCE_DIR}/zfprojConfig.cmake" OPTIONAL)
 if(COMMAND zfprojConfigGlobal_ZFLoader)
     zfprojConfigGlobal_ZFLoader()
 endif()
-project(ZFLoader)
 message("Build with type: ${CMAKE_BUILD_TYPE}, path: ${PROJECT_SOURCE_DIR}")
 set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
 set(CMAKE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/../../../../_tmp/cmake/ZFLoader/app")
@@ -13,16 +13,16 @@ include("${ZF_ROOT_PATH}/tools/spec/cmake/util.cmake")
 
 execute_process(COMMAND sh "${ZF_ROOT_PATH}/tools/release/release_cmake.sh")
 
-file(GLOB_RECURSE srcfiles RELATIVE ${PROJECT_SOURCE_DIR}
+file(GLOB_RECURSE ZF_SRC_FILES RELATIVE ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/../../../zfsrc/*.c
     ${PROJECT_SOURCE_DIR}/../../../zfsrc/*.cpp
     ${PROJECT_SOURCE_DIR}/../../../zfsrc_ext/*.c
     ${PROJECT_SOURCE_DIR}/../../../zfsrc_ext/*.cpp
     )
 if(COMMAND zfprojConfigBefore_ZFLoader)
-    zfprojConfigBefore_ZFLoader(ZFLoader srcfiles)
+    zfprojConfigBefore_ZFLoader(ZFLoader ZF_SRC_FILES)
 endif()
-add_executable(ZFLoader ${srcfiles})
+add_executable(ZFLoader ${ZF_SRC_FILES})
 zfprojStripFILE(ZFLoader)
 set_target_properties(ZFLoader PROPERTIES LINKER_LANGUAGE CXX)
 if(COMMAND zfprojConfigAfter_ZFLoader)
