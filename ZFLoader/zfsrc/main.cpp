@@ -3,15 +3,13 @@
 #include "ZFUIWidget.h"
 #include "ZFLua.h"
 
-ZFMAIN_ENTRY()
-{
+ZFMAIN_ENTRY() {
     ZFCoreArray<ZFPathInfo> extResList;
     extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForModule()));
     extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForStorageShared()));
 
     zfLogTrim() << "external res:" << extResList;
-    for(zfindex i = 0; i < extResList.count(); ++i)
-    {
+    for(zfindex i = 0; i < extResList.count(); ++i) {
         ZFResExtPathAdd(extResList[i]);
     }
 
@@ -19,24 +17,20 @@ ZFMAIN_ENTRY()
     ZFLuaGC();
 }
 
-ZF_GLOBAL_INITIALIZER_INIT(LuaRunner)
-{
+ZF_GLOBAL_INITIALIZER_INIT(LuaRunner) {
     ZFLISTENER(action) {
-        if(!ZFApp::appParams().isEmpty() && ZFRegExpFind(ZFApp::appParams()[0], ".*\\.lua$") != ZFIndexRangeZero())
-        {
+        if(!ZFApp::appParams().isEmpty() && ZFRegExpFind(ZFApp::appParams()[0], ".*\\.lua$") != ZFIndexRangeZero()) {
             zfargs.eventFiltered(zftrue);
             const ZFCoreArray<zfstring> &appParams = ZFApp::appParams();
 
             ZFPathInfo pathInfo;
-            if(!ZFPathInfoFromString(pathInfo, appParams[0]))
-            {
+            if(!ZFPathInfoFromString(pathInfo, appParams[0])) {
                 pathInfo.pathType = ZFPathType_file();
                 pathInfo.pathData = appParams[0];
             }
 
             ZFCoreArray<zfautoObject> luaParams;
-            for(zfindex i = 1; i < appParams.count(); ++i)
-            {
+            for(zfindex i = 1; i < appParams.count(); ++i) {
                 luaParams.add(zflineAlloc(v_zfstring, appParams[i]));
             }
             ZFLuaExecute(ZFInputForPathInfo(pathInfo), &luaParams);
@@ -45,8 +39,7 @@ ZF_GLOBAL_INITIALIZER_INIT(LuaRunner)
     this->callback = action;
     ZFGlobalObserver().observerAdd(ZFApp::EventAppParamDispatch(), this->callback);
 }
-ZF_GLOBAL_INITIALIZER_DESTROY(LuaRunner)
-{
+ZF_GLOBAL_INITIALIZER_DESTROY(LuaRunner) {
     ZFGlobalObserver().observerRemove(ZFApp::EventAppParamDispatch(), this->callback);
 }
 private:
