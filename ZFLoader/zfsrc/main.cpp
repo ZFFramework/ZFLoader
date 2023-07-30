@@ -8,7 +8,7 @@ ZFMAIN_ENTRY() {
     extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForModule()));
     extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForStorageShared()));
 
-    zfLogTrim() << "external res:" << extResList;
+    zfLogTrim() << "external res: " << extResList;
     for(zfindex i = 0; i < extResList.count(); ++i) {
         ZFResExtPathAdd(extResList[i]);
     }
