@@ -182,7 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C40E7237016DCC78622F12C6B3DF818 /* Build configuration list for PBXNativeTarget "ZFLoader" */;
 			buildPhases = (
-				0F83597AE0C20D01DC7F2569A5006840 /* ZFSetup */,
+				78469C9A2E89AC0DCE6213EDB765AC1F /* ZFSetup */,
 				69B61A4E2755F1DB3F2E3FF9F6F76A24 /* Sources */,
 				FA01CC8002A93B86011E3387D6422E8D /* Frameworks */,
 				ECF0C7ABEB4A8FD18E4A8401B9819A01 /* Resources */,
@@ -249,7 +249,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F83597AE0C20D01DC7F2569A5006840 /* ZFSetup */ = {
+		654BDF4A062785D520D6D73DF1483291 /* ZFUniqueProj */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = ZFUniqueProj;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ${SRCROOT}/../../../../../ZFFramework/tools/spec/iOS/unique_proj.sh \"${SRCROOT}/${PROJECT_NAME}.xcodeproj\"\n";
+		};
+		78469C9A2E89AC0DCE6213EDB765AC1F /* ZFSetup */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -278,22 +293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"${SRCROOT}/../../../../zfsetup.sh\"\nsh ${SRCROOT}/ZFLoader.xcodeproj/zfsetup.sh ${SRCROOT} ${CONFIGURATION_BUILD_DIR} ${CONTENTS_FOLDER_PATH}\n";
-		};
-		654BDF4A062785D520D6D73DF1483291 /* ZFUniqueProj */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = ZFUniqueProj;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh ${SRCROOT}/../../../../../ZFFramework/tools/spec/iOS/unique_proj.sh \"${SRCROOT}/${PROJECT_NAME}.xcodeproj\"\n";
+			shellScript = "sh ${SRCROOT}/ZFLoader.xcodeproj/zfsetup.sh ${SRCROOT} ${CONFIGURATION_BUILD_DIR} ${CONTENTS_FOLDER_PATH}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
