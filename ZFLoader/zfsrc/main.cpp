@@ -29,7 +29,7 @@ ZF_GLOBAL_INITIALIZER_INIT(LuaRunner) {
                 pathInfo.pathData = appParams[0];
             }
 
-            ZFCoreArray<zfautoObject> luaParams;
+            ZFCoreArray<zfauto> luaParams;
             for(zfindex i = 1; i < appParams.count(); ++i) {
                 luaParams.add(zflineAlloc(v_zfstring, appParams[i]));
             }
