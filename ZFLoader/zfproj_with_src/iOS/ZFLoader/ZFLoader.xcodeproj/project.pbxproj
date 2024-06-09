@@ -13,9 +13,7 @@
 		13A67F8BD8AD58322DC221E293B0374E /* zfgensrc_ZFCore_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FFFC78CD6B7EE4C0354F130C5107A05 /* zfgensrc_ZFCore_impl.mm */; };
 		1924DDA4B365C3746FEF0F92D6297053 /* zfgensrc_ZFAlgorithm_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46F49CFF8075391E5E4F066CC1027362 /* zfgensrc_ZFAlgorithm_impl.mm */; };
 		294DFA25A0F437ADE132D8B9503C655A /* zfgensrc_ZFUIWidget.mm in Sources */ = {isa = PBXBuildFile; fileRef = A81E914B6A6C32EE0DCC5D08ABF24D7C /* zfgensrc_ZFUIWidget.mm */; };
-		352D42381E3285A90F44219CE0A91D71 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D895A3DB6D26F7CA485E0DA733C8F03C /* Icon-72.png */; };
 		36B15A6F5C72516DC25F385F1C38F596 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007E560CDD28124B9FDAF48586ADC05A /* RootViewController.xib */; };
-		45D4C178A236D23BC2C58F11B75B16AF /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC5C538CE23709F426094AE05106B9C4 /* Icon-50.png */; };
 		46CE5698513713F4DD59A9D9B972B242 /* zfgensrc_ZFUIWebKit_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91D540E2EB07A712C2E12FF2E02F585E /* zfgensrc_ZFUIWebKit_impl.mm */; };
 		4EDB4E413312932C9770587844FD288E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */; };
 		598D2BFC828D804AE3417F956A125E00 /* zfgensrc_ZFUIWebKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EA53C4DE67EB74841704C4AE2EB1B4C /* zfgensrc_ZFUIWebKit.mm */; };
@@ -26,14 +24,10 @@
 		7B6D422475313BE61A82D56488909E25 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07FA48E4A67234AB68E10B90222C4D82 /* AppDelegate.mm */; };
 		8AE0418DB3F93E013CFCBBE14B106F62 /* zfgensrc_ZF_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8169CC68B66DEB7AE2ABA5DEF9F64705 /* zfgensrc_ZF_impl.mm */; };
 		91B916D527414B768CB44587608D673C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */; };
-		A8BBBD902629523A4B8D3110A50CBD02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A47A52EB08A3025D7E43B9ABF8EBB416 /* Default-568h@2x.png */; };
 		B6408091053BB2101FB5FF4C297A9E03 /* zfgensrc_ZFNet_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = D043487A830593CD0CF3BA1288F5D206 /* zfgensrc_ZFNet_impl.mm */; };
 		B97D99AB2FB07ABAC46DC3DAEBD5D29F /* zfgensrc_ZFCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 352221B9B45E95226378758EE5C1291D /* zfgensrc_ZFCore.mm */; };
-		C43386EB3EDBCD24828A71E2CC1327DF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2781CB6363E8F9340804D253A7C469D9 /* Icon.png */; };
 		CC9935375FA55E84B2732E787398D5B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9AD230AA3677D00BBF3775C1600626 /* AVFoundation.framework */; };
-		CCC2CE54EC3B8429A5B0BEFF35DE59AA /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF8439FB1820A22FF4C35FA2F1FF71C /* Icon-29.png */; };
 		CDCA05A147DBF085D17A2A4A40132830 /* zfgensrc_ZFUIKit_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C6DF9C20E8F0B9CE6A2D6A1B83CD1DA /* zfgensrc_ZFUIKit_impl.mm */; };
-		E8187482811A1B4A228E8D1EDE9C1542 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD842C5752031A1B7F1060C6706F99A7 /* Icon@2x.png */; };
 		EF0742AAD97BFCDB7FDECB8BF2C5AC72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F208FB312AC07704841F43CFDF71B184 /* main.m */; };
 		EFDC02DE5A81443A761B35F93E4C8529 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF00779897D90216B17958436DD03AD5 /* RootViewController.m */; };
 		F2B5BCA70CAF3DC9ED0DEC3030293E86 /* zfgensrc_ZFAlgorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37EE49BA9BAAA62BB207AE92F5D4BF8A /* zfgensrc_ZFAlgorithm.mm */; };
@@ -47,7 +41,6 @@
 		0EA53C4DE67EB74841704C4AE2EB1B4C /* zfgensrc_ZFUIWebKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIWebKit.mm; sourceTree = "<group>"; };
 		10186B3DF1E73FD2FD428FDC2E4C03A8 /* zfgensrc_ZFUtility.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUtility.mm; sourceTree = "<group>"; };
 		23775675371E613A438268BC6381CB56 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		2781CB6363E8F9340804D253A7C469D9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		352221B9B45E95226378758EE5C1291D /* zfgensrc_ZFCore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFCore.mm; sourceTree = "<group>"; };
 		37EE49BA9BAAA62BB207AE92F5D4BF8A /* zfgensrc_ZFAlgorithm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFAlgorithm.mm; sourceTree = "<group>"; };
 		41FEDA567AF0FF0BC62F50B3B2461EC7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,22 +57,17 @@
 		8169CC68B66DEB7AE2ABA5DEF9F64705 /* zfgensrc_ZF_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZF_impl.mm; sourceTree = "<group>"; };
 		91D540E2EB07A712C2E12FF2E02F585E /* zfgensrc_ZFUIWebKit_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIWebKit_impl.mm; sourceTree = "<group>"; };
 		9D9AD230AA3677D00BBF3775C1600626 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9FF8439FB1820A22FF4C35FA2F1FF71C /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		A360A8B94D14E6BEEF2DE0D9EBF265D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A47A52EB08A3025D7E43B9ABF8EBB416 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A81E914B6A6C32EE0DCC5D08ABF24D7C /* zfgensrc_ZFUIWidget.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIWidget.mm; sourceTree = "<group>"; };
 		AFCBF8AAE07BF5B7DD5C2E81DA39AD89 /* zfgensrc_ZFUIKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIKit.mm; sourceTree = "<group>"; };
 		BF00779897D90216B17958436DD03AD5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		CB7ED04F4BB870BD4F731D7B3B04F220 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		D043487A830593CD0CF3BA1288F5D206 /* zfgensrc_ZFNet_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFNet_impl.mm; sourceTree = "<group>"; };
 		D840F5E3163DB6867ECC7F1724EC17C9 /* zfgensrc_ZFLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFLoader.mm; sourceTree = "<group>"; };
-		D895A3DB6D26F7CA485E0DA733C8F03C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F208FB312AC07704841F43CFDF71B184 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F29764ED5AB1AD12432ED31500481FD5 /* zfgensrc_ZFNet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFNet.mm; sourceTree = "<group>"; };
-		FC5C538CE23709F426094AE05106B9C4 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
-		FD842C5752031A1B7F1060C6706F99A7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +115,6 @@
 			children = (
 				A360A8B94D14E6BEEF2DE0D9EBF265D2 /* AppDelegate.h */,
 				07FA48E4A67234AB68E10B90222C4D82 /* AppDelegate.mm */,
-				A47A52EB08A3025D7E43B9ABF8EBB416 /* Default-568h@2x.png */,
-				9FF8439FB1820A22FF4C35FA2F1FF71C /* Icon-29.png */,
-				FC5C538CE23709F426094AE05106B9C4 /* Icon-50.png */,
-				D895A3DB6D26F7CA485E0DA733C8F03C /* Icon-72.png */,
-				2781CB6363E8F9340804D253A7C469D9 /* Icon.png */,
-				FD842C5752031A1B7F1060C6706F99A7 /* Icon@2x.png */,
 				66BFB6E92C9E19DAF9ED715879739412 /* Info.plist */,
 				41FEDA567AF0FF0BC62F50B3B2461EC7 /* LaunchScreen.storyboard */,
 				CB7ED04F4BB870BD4F731D7B3B04F220 /* RootViewController.h */,
@@ -236,12 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8BBBD902629523A4B8D3110A50CBD02 /* Default-568h@2x.png in Resources */,
-				CCC2CE54EC3B8429A5B0BEFF35DE59AA /* Icon-29.png in Resources */,
-				45D4C178A236D23BC2C58F11B75B16AF /* Icon-50.png in Resources */,
-				352D42381E3285A90F44219CE0A91D71 /* Icon-72.png in Resources */,
-				C43386EB3EDBCD24828A71E2CC1327DF /* Icon.png in Resources */,
-				E8187482811A1B4A228E8D1EDE9C1542 /* Icon@2x.png in Resources */,
 				36B15A6F5C72516DC25F385F1C38F596 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
