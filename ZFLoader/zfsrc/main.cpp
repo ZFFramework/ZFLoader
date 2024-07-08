@@ -13,8 +13,25 @@ ZFMAIN_ENTRY() {
         ZFResExtPathAdd(extResList[i]);
     }
 
-    ZFLuaExecute(ZFInputForRes("zf.lua"));
-    ZFLuaGC();
+    ZFInput src = ZFInputForRes("zf.lua");
+    if(src) {
+        zfLogTrim("redirect to %s", src.callbackId());
+        ZFLuaExecute(src);
+        ZFLuaGC();
+        return;
+    }
+
+    zfobj<ZFUIWindow> w;
+    w->windowShow();
+    zfobj<ZFUITextView> text;
+    w->childAdd(text)->c_sizeWrap();
+    text->textSingleLine(zffalse);
+    zfstring hint = "put a \"zf.lua\" to one of these paths and run again:\n";
+    for(zfindex i = 0; i < ZFResExtPathList().count(); ++i) {
+        hint += "\n";
+        ZFPathInfoToStringT(hint, ZFResExtPathList()[i]);
+    }
+    text->text(hint);
 }
 
 ZFMAIN_PARAM_DISPATCH(LuaRunner) {
