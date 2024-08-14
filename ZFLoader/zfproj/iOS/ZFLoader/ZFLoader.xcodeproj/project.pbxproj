@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052D3D71A6E75722906EAA2EB330C490 /* ZFUIExt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A55A00E29CD67B84510C8FB91D21F23 /* ZFUIExt.xcframework */; };
 		06606977B2F683E434F890135930B57A /* ZFUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E720515EC185380CCC07585C2594C2 /* ZFUIKit.xcframework */; };
 		09D0F71522F82E9852D067FCE8430FB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F63C9283BE4557967B3B7E62A45F542 /* Foundation.framework */; };
 		09F18A681101B19ECCCD379F02489952 /* ZFNet.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2538AD69C2FB8DE3E0B28C506A011AAA /* ZFNet.xcframework */; };
@@ -42,6 +43,7 @@
 		1CB590F390BA2634858D5896ABAD2162 /* ZFUtility.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFUtility.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFUtility.xcframework; sourceTree = "<group>"; };
 		23775675371E613A438268BC6381CB56 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2538AD69C2FB8DE3E0B28C506A011AAA /* ZFNet.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFNet.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFNet.xcframework; sourceTree = "<group>"; };
+		2A55A00E29CD67B84510C8FB91D21F23 /* ZFUIExt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFUIExt.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFUIExt.xcframework; sourceTree = "<group>"; };
 		2EEFA000A39C35D5B2440D017460AAAA /* ZFUIWidget.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFUIWidget.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFUIWidget.xcframework; sourceTree = "<group>"; };
 		41FEDA567AF0FF0BC62F50B3B2461EC7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		445E9E680BA83664ED776E3DEADBE742 /* ZFLua_impl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFLua_impl.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFLua_impl.xcframework; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				E288BCAB6574BD590D61FCE2F0E0B495 /* ZFLua_impl.xcframework in Frameworks */,
 				09F18A681101B19ECCCD379F02489952 /* ZFNet.xcframework in Frameworks */,
 				64571F56EB9DD1F25F34C6059AC520FE /* ZFNet_impl.xcframework in Frameworks */,
+				052D3D71A6E75722906EAA2EB330C490 /* ZFUIExt.xcframework in Frameworks */,
 				06606977B2F683E434F890135930B57A /* ZFUIKit.xcframework in Frameworks */,
 				FF6725345DF3AD5D7CA4ADC7FBC85F4D /* ZFUIKit_impl.xcframework in Frameworks */,
 				6A7C2DF97A4DA2E9B780600BB6BDFC05 /* ZFUIWebKit.xcframework in Frameworks */,
@@ -129,6 +132,7 @@
 				445E9E680BA83664ED776E3DEADBE742 /* ZFLua_impl.xcframework */,
 				2538AD69C2FB8DE3E0B28C506A011AAA /* ZFNet.xcframework */,
 				C8E5FA286565B23EFA86B6AFCA005E43 /* ZFNet_impl.xcframework */,
+				2A55A00E29CD67B84510C8FB91D21F23 /* ZFUIExt.xcframework */,
 				46E720515EC185380CCC07585C2594C2 /* ZFUIKit.xcframework */,
 				AB16B873F3CDADD59128E152803FE5BD /* ZFUIKit_impl.xcframework */,
 				AA7416C67B3D44F81776DF045BED826B /* ZFUIWebKit.xcframework */,
