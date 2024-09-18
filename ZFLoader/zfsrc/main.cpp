@@ -8,14 +8,14 @@ ZFMAIN_ENTRY() {
     extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForModule()));
     extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForStorageShared()));
 
-    zfLogTrim() << "external res: " << extResList;
+    ZFLogTrim() << "external res: " << extResList;
     for(zfindex i = 0; i < extResList.count(); ++i) {
         ZFResExtPathAdd(extResList[i]);
     }
 
     ZFInput src = ZFInputForRes("zf.lua");
     if(src) {
-        zfLogTrim("redirect to %s", src.callbackId());
+        ZFLogTrim("redirect to %s", src.callbackId());
         ZFLuaExecute(src);
         ZFLuaGC();
         return;
