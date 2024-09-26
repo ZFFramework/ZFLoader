@@ -22,10 +22,10 @@ ZFMAIN_ENTRY() {
     }
 
     zfobj<ZFUIWindow> w;
-    w->windowShow();
+    w->show();
     zfobj<ZFUITextView> text;
-    w->childAdd(text)->c_sizeWrap();
-    text->textSingleLine(zffalse);
+    w->child(text)->c_sizeWrap();
+    text->singleLine(zffalse);
     zfstring hint = "put a \"zf.lua\" to one of these paths and run again:\n";
     for(zfindex i = 0; i < ZFResExtPathList().count(); ++i) {
         hint += "\n";
