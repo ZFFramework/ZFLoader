@@ -3,6 +3,7 @@ name: Android
 on:
   push:
     branches: [ "master" ]
+  repository_dispatch: # trigger from https://github.com/ZFFramework/ZFFramework/actions/workflows/doxygen.yml
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
