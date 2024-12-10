@@ -42,7 +42,13 @@ jobs:
       run: |
         Invoke-Expression -Command 'cmd.exe /C "..\\ZFFramework\\tools\\buildapp\\buildapp_cmake.bat" "${env:ZF_PROJ_NAME}" "${env:ZF_PROJ_PATH}"'
 
+    - name: ZF zip archive
+      uses: vimtor/action-zip@v1.2
+      with:
+          files: _tmp/cmake/${{env.ZF_PROJ_NAME}}/app/
+          dest: _tmp/cmake/${{env.ZF_PROJ_NAME}}/app.zip
+
     - name: ZF upload archive
       run: |
-        Invoke-Expression -Command 'cmd.exe /C "..\\ZFFramework\\master\\ZF_CI\\upload_app.bat" "${env:ZF_PROJ_PATH}\\..\\..\\_tmp\\cmake\\${env:ZF_PROJ_NAME}\\app\\" "cmake_Windows\\${env:ZF_PROJ_NAME}\\"'
+        Invoke-Expression -Command 'cmd.exe /C "..\\ZFFramework\\master\\ZF_CI\\upload_app.bat" "_tmp\\cmake\\${env:ZF_PROJ_NAME}\\app.zip" "cmake_Windows\\${env:ZF_PROJ_NAME}.zip"'
 
