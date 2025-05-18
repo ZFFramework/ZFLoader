@@ -19,6 +19,7 @@ static void _ZFLoaderEntry(void) {
     }
 
     zfobj<ZFUIWindow> w;
+    ZFUIOnScreenKeyboardAutoResizeStart(w);
     w->show();
     w->layoutParam()->c_margin(20);
 
