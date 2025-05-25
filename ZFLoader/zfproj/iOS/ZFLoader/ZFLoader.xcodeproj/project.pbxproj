@@ -15,6 +15,7 @@
 		42308027821330675AEDEA94AB6A7B8A /* ZFAlgorithm_impl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973E76CEE3B1036ED5A40746AFB1BC04 /* ZFAlgorithm_impl.xcframework */; };
 		4A9DD7F4ABEDC09F74CF95785C1C59FB /* ZFLua.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C079609B93CA977E6335C54D45766A2B /* ZFLua.xcframework */; };
 		4EDB4E413312932C9770587844FD288E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */; };
+		54002C2CEB8FD751AF12B1BA72CDA1AE /* ZFAppUtil.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB04132B691D516CB7D93E5536D864F /* ZFAppUtil.xcframework */; };
 		62E30AC56E7C17154A012E80BBBA7E17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23775675371E613A438268BC6381CB56 /* QuartzCore.framework */; };
 		64571F56EB9DD1F25F34C6059AC520FE /* ZFNet_impl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E5FA286565B23EFA86B6AFCA005E43 /* ZFNet_impl.xcframework */; };
 		6A7C2DF97A4DA2E9B780600BB6BDFC05 /* ZFUIWebKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7416C67B3D44F81776DF045BED826B /* ZFUIWebKit.xcframework */; };
@@ -69,6 +70,7 @@
 		D840F5E3163DB6867ECC7F1724EC17C9 /* zfgensrc_ZFLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFLoader.mm; sourceTree = "<group>"; };
 		DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		EBB04132B691D516CB7D93E5536D864F /* ZFAppUtil.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFAppUtil.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFAppUtil.xcframework; sourceTree = "<group>"; };
 		F208FB312AC07704841F43CFDF71B184 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				4EDB4E413312932C9770587844FD288E /* WebKit.framework in Frameworks */,
 				B4375569C2D91698C2FFF4FEE3CA07B8 /* ZFAlgorithm.xcframework in Frameworks */,
 				42308027821330675AEDEA94AB6A7B8A /* ZFAlgorithm_impl.xcframework in Frameworks */,
+				54002C2CEB8FD751AF12B1BA72CDA1AE /* ZFAppUtil.xcframework in Frameworks */,
 				97E73C4B912B689CDF963E3EB4CCF614 /* ZFCore.xcframework in Frameworks */,
 				CDCD22EB980A6F3069EDA3F4BF638B04 /* ZFCore_impl.xcframework in Frameworks */,
 				4A9DD7F4ABEDC09F74CF95785C1C59FB /* ZFLua.xcframework in Frameworks */,
@@ -126,6 +129,7 @@
 				E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */,
 				9A820E93FE83B0298F8720C3C0119F25 /* ZFAlgorithm.xcframework */,
 				973E76CEE3B1036ED5A40746AFB1BC04 /* ZFAlgorithm_impl.xcframework */,
+				EBB04132B691D516CB7D93E5536D864F /* ZFAppUtil.xcframework */,
 				5A8C2314A6CF5A910A88620AFD471270 /* ZFCore.xcframework */,
 				544B881A803F319C8838E11941B4F889 /* ZFCore_impl.xcframework */,
 				C079609B93CA977E6335C54D45766A2B /* ZFLua.xcframework */,
