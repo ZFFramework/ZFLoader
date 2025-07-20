@@ -9,7 +9,7 @@ static void _ZFLoaderEntry(void) {
     extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForStorageShared()));
 
     ZFPathInfo custom;
-    if(ZFPathInfoFromStringT(custom, ZFState::instance()->get("ZFLoaderCustomResExt"))) {
+    if(ZFPathInfoFromStringT(custom, ZFState::instance()->get("ZFCustomResExt"))) {
         extResList.add(custom);
     }
 
@@ -72,7 +72,7 @@ static void _ZFLoaderEntry(void) {
     ZFLISTENER_1(onClick
             , zfautoT<ZFUIText>, input
             ) {
-        zfstring key = "ZFLoaderCustomResExt";
+        zfstring key = "ZFCustomResExt";
         zfstring text = input->text();
         if(text) {
             ZFState::instance()->set(key, text);
