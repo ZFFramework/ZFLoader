@@ -4,19 +4,16 @@
 #include "ZFLua.h"
 
 static void _ZFLoaderEntry(void) {
-    ZFCoreArray<ZFPathInfo> extResList;
-    extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForModule()));
-    extResList.add(ZFPathInfo(ZFPathType_file(), ZFPathForStorageShared()));
-
-    ZFPathInfo custom;
-    if(ZFPathInfoFromStringT(custom, ZFState::instance()->get("ZFCustomResExt"))) {
-        extResList.add(custom);
+    {
+        ZFPathInfo custom;
+        if(ZFPathInfoFromStringT(custom, ZFState::instance()->get("ZFCustomResExt"))) {
+            ZFResExtPathAdd(custom);
+        }
     }
-
-    ZFLogTrim() << "external res: " << extResList;
-    for(zfindex i = 0; i < extResList.count(); ++i) {
-        ZFResExtPathAdd(extResList[i]);
-    }
+    ZFResExtPathAdd(ZFPathInfo(ZFPathType_file(), ZFPathForModule()));
+    ZFResExtPathAdd(ZFPathInfo(ZFPathType_file(), ZFPathForStorage()));
+    ZFResExtPathAdd(ZFPathInfo(ZFPathType_file(), ZFPathForStorageShared()));
+    ZFLogTrim() << "external res: " << ZFResExtPathList();
 
     zfobj<ZFUIWindow> w;
     ZFUIOnScreenKeyboardAutoResizeStart(w);
