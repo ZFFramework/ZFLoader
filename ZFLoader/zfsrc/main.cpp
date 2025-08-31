@@ -10,7 +10,6 @@ static void _ZFLoaderEntry(void) {
             ZFResExtPathAdd(custom);
         }
     }
-    ZFResExtPathAdd(ZFPathInfo(ZFPathType_file(), ZFPathForModule()));
     ZFResExtPathAdd(ZFPathInfo(ZFPathType_file(), ZFPathForStorage()));
     ZFResExtPathAdd(ZFPathInfo(ZFPathType_file(), ZFPathForStorageShared()));
     ZFLogTrim() << "external res: " << ZFResExtPathList();
