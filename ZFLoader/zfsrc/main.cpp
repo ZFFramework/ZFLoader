@@ -37,7 +37,7 @@ static void _ZFLoaderEntry(void) {
     }
     else {
         input = zfobj<ZFUITextView>()
-            ->c_text("http:http://localhost")
+            ->c_text("http!!http://localhost")
             ;
     }
     zfobj<ZFUIButtonBasic> btn;
