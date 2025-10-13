@@ -1,7 +1,6 @@
 #include "ZFCore.h"
 #include "ZFUIKit.h"
 #include "ZFUIWidget.h"
-#include "ZFLua.h"
 
 static void _ZFLoaderEntry(void) {
     {
@@ -81,11 +80,8 @@ static void _ZFLoaderEntry(void) {
     } ZFLISTENER_END()
     btn->onClick(onClick);
 
-    ZFInput src = ZFInputForRes("zf.lua");
-    if(src) {
-        ZFLogTrim("redirect to %s", src.callbackId());
-        ZFLuaExecute(src);
-        ZFLuaGC();
+    if(ZFResIsExist("zf.lua")) {
+        zfimport("zf.lua");
     }
 }
 
@@ -94,24 +90,5 @@ ZFMAIN_ENTRY() {
         _ZFLoaderEntry();
     } ZFLISTENER_END()
     ZFState::instance()->load(loadFinish);
-}
-
-ZFMAIN_PARAM_DISPATCH(LuaRunner) {
-    if(ZFApp::appParams().isEmpty() || ZFRegExpFind(ZFApp::appParams()[0], ".*\\.lua$") == ZFIndexRangeMax()) {
-        return;
-    }
-    zfargs.eventFiltered(zftrue);
-
-    const ZFCoreArray<zfstring> &appParams = ZFApp::appParams();
-    ZFPathInfo pathInfo;
-    if(!ZFPathInfoFromStringT(pathInfo, appParams[0])) {
-        pathInfo.pathType(ZFPathType_file());
-        pathInfo.pathData(appParams[0]);
-    }
-    ZFCoreArray<zfauto> luaParams;
-    for(zfindex i = 1; i < appParams.count(); ++i) {
-        luaParams.add(zfobj<v_zfstring>(appParams[i]));
-    }
-    ZFLuaExecuteDetail(ZFInputForPathInfo(pathInfo), luaParams);
 }
 
