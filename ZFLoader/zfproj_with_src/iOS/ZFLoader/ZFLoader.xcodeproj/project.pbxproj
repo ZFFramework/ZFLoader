@@ -14,6 +14,7 @@
 		17D24252CDA5D4ABE685FB18FF33DC90 /* zfgensrc_ZFUIExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3FD0C2787D1A5A91A8852CAD365E6CA /* zfgensrc_ZFUIExt.mm */; };
 		1924DDA4B365C3746FEF0F92D6297053 /* zfgensrc_ZFAlgorithm_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46F49CFF8075391E5E4F066CC1027362 /* zfgensrc_ZFAlgorithm_impl.mm */; };
 		294DFA25A0F437ADE132D8B9503C655A /* zfgensrc_ZFUIWidget.mm in Sources */ = {isa = PBXBuildFile; fileRef = A81E914B6A6C32EE0DCC5D08ABF24D7C /* zfgensrc_ZFUIWidget.mm */; };
+		32785B193F6EBBACD9CED58C927781C9 /* Pods_ZFLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EDF3C0E49C4815CDFF0C9EFFF16CE3 /* Pods_ZFLoader.framework */; };
 		36B15A6F5C72516DC25F385F1C38F596 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007E560CDD28124B9FDAF48586ADC05A /* RootViewController.xib */; };
 		46CE5698513713F4DD59A9D9B972B242 /* zfgensrc_ZFUIWebKit_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91D540E2EB07A712C2E12FF2E02F585E /* zfgensrc_ZFUIWebKit_impl.mm */; };
 		4EDB4E413312932C9770587844FD288E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */; };
@@ -53,8 +54,10 @@
 		4A76602BF0CF382279D32D1404B30568 /* zfgensrc_ZFLua.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFLua.mm; sourceTree = "<group>"; };
 		4C6DF9C20E8F0B9CE6A2D6A1B83CD1DA /* zfgensrc_ZFUIKit_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIKit_impl.mm; sourceTree = "<group>"; };
 		52FE312703628B9163122890E554BCAE /* zfsrc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zfsrc; path = ../../../zfsrc; sourceTree = "<group>"; };
+		64EDF3C0E49C4815CDFF0C9EFFF16CE3 /* Pods_ZFLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZFLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EDC7309E457AC9A992F474829874DD /* ZFLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BFB6E92C9E19DAF9ED715879739412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C355A832349639DDB41CA2334601012 /* Pods-ZFLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFLoader.release.xcconfig"; path = "Target Support Files/Pods-ZFLoader/Pods-ZFLoader.release.xcconfig"; sourceTree = "<group>"; };
 		6FFFC78CD6B7EE4C0354F130C5107A05 /* zfgensrc_ZFCore_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFCore_impl.mm; sourceTree = "<group>"; };
 		76155D12EFD095B56BC13095419BC25F /* zfgensrc_ZFLua_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFLua_impl.mm; sourceTree = "<group>"; };
 		7F63C9283BE4557967B3B7E62A45F542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -68,6 +71,7 @@
 		CB7ED04F4BB870BD4F731D7B3B04F220 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		D043487A830593CD0CF3BA1288F5D206 /* zfgensrc_ZFNet_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFNet_impl.mm; sourceTree = "<group>"; };
 		D840F5E3163DB6867ECC7F1724EC17C9 /* zfgensrc_ZFLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFLoader.mm; sourceTree = "<group>"; };
+		D986548E51C5373C506E37850C34DDEF /* Pods-ZFLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFLoader.debug.xcconfig"; path = "Target Support Files/Pods-ZFLoader/Pods-ZFLoader.debug.xcconfig"; sourceTree = "<group>"; };
 		DCE6690B09CAAE0584B9A58039F67598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -84,6 +88,7 @@
 				CC9935375FA55E84B2732E787398D5B6 /* AVFoundation.framework in Frameworks */,
 				91B916D527414B768CB44587608D673C /* CoreGraphics.framework in Frameworks */,
 				09D0F71522F82E9852D067FCE8430FB2 /* Foundation.framework in Frameworks */,
+				32785B193F6EBBACD9CED58C927781C9 /* Pods_ZFLoader.framework in Frameworks */,
 				62E30AC56E7C17154A012E80BBBA7E17 /* QuartzCore.framework in Frameworks */,
 				74594D7BBB66E2DD7C14BB8434633F76 /* UIKit.framework in Frameworks */,
 				4EDB4E413312932C9770587844FD288E /* WebKit.framework in Frameworks */,
@@ -97,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC713D3C3A88A14843BD1A289E7C5D6 /* Frameworks */,
+				1FE40C2538004B5DEFD240AE0ABD7E3A /* Pods */,
 				EF682DA50230336F2BF213D077C7C5E0 /* Products */,
 				8BE08B2C94DD1FA5E785311B5BF25FF5 /* ProjectFiles */,
 				B01AE1BB1E6F31BBA530F8C1E39C68C9 /* ZFLoader */,
@@ -109,11 +115,21 @@
 				9D9AD230AA3677D00BBF3775C1600626 /* AVFoundation.framework */,
 				DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */,
 				7F63C9283BE4557967B3B7E62A45F542 /* Foundation.framework */,
+				64EDF3C0E49C4815CDFF0C9EFFF16CE3 /* Pods_ZFLoader.framework */,
 				23775675371E613A438268BC6381CB56 /* QuartzCore.framework */,
 				48034E24D59344F93D45AC9663EE3AF3 /* UIKit.framework */,
 				E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FE40C2538004B5DEFD240AE0ABD7E3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D986548E51C5373C506E37850C34DDEF /* Pods-ZFLoader.debug.xcconfig */,
+				6C355A832349639DDB41CA2334601012 /* Pods-ZFLoader.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		8BE08B2C94DD1FA5E785311B5BF25FF5 /* ProjectFiles */ = {
@@ -173,6 +189,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C40E7237016DCC78622F12C6B3DF818 /* Build configuration list for PBXNativeTarget "ZFLoader" */;
 			buildPhases = (
+				69003166A6F2612C0E3CEEA469934166 /* [CP] Check Pods Manifest.lock */,
 				78469C9A2E89AC0DCE6213EDB765AC1F /* ZFSetup */,
 				69B61A4E2755F1DB3F2E3FF9F6F76A24 /* Sources */,
 				FA01CC8002A93B86011E3387D6422E8D /* Frameworks */,
@@ -249,6 +266,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "sh ${SRCROOT}/../../../../../ZFFramework/tools/spec/iOS/unique_proj.sh \"${SRCROOT}/${PROJECT_NAME}.xcodeproj\"\n";
+		};
+		69003166A6F2612C0E3CEEA469934166 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZFLoader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		78469C9A2E89AC0DCE6213EDB765AC1F /* ZFSetup */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -375,6 +414,7 @@
 		};
 		967A70ADA884FEA1D304213A70F24619 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D986548E51C5373C506E37850C34DDEF /* Pods-ZFLoader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -395,7 +435,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZFFramework.ZFLoader;
-				PRODUCT_NAME = ZFLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/../../../zfsrc",
@@ -473,6 +513,7 @@
 		};
 		BCCED6B1E3362D26C97CD446C67815E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C355A832349639DDB41CA2334601012 /* Pods-ZFLoader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -493,7 +534,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZFFramework.ZFLoader;
-				PRODUCT_NAME = ZFLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/../../../zfsrc",
