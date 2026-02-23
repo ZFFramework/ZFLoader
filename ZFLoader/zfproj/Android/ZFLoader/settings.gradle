@@ -23,7 +23,7 @@ rootProject.name = 'ZFLoader'
 include ':zfapp'
 
 if (file('./zfapp/zfprojConfig/zfprojConfig.xml').exists()) {
-    include ':zfprojConfig:ZFLoader'
-    project(':zfprojConfig:ZFLoader').projectDir = new File(file('./zfprojConfigHelper').absolutePath)
+    include ':zfprojConfig_ZFLoader'
+    project(':zfprojConfig_ZFLoader').projectDir = new File(file('./zfprojConfigHelper').absolutePath)
 }
 
