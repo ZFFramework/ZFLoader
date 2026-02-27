@@ -42,5 +42,5 @@ set_target_properties(ZFLoader PROPERTIES LINKER_LANGUAGE CXX)
 
 find_library(log-lib log)
 find_library(android-lib android)
-target_link_libraries(ZFLoader ${android-lib} ${log-lib})
+target_link_libraries(ZFLoader PRIVATE ${android-lib} ${log-lib})
 
