@@ -3,23 +3,21 @@ project(ZFLoader)
 set(ZF_ROOT_PATH "${PROJECT_SOURCE_DIR}/../../../../../ZFFramework")
 include("${ZF_ROOT_PATH}/tools/spec/cmake/util.cmake")
 add_compile_options("$<$<CONFIG:DEBUG>:-DDEBUG>")
-
-include("${PROJECT_SOURCE_DIR}/zfprojConfig.cmake" OPTIONAL)
-
 if(WIN32)
     set(CMAKE_WIN32_EXECUTABLE TRUE)
-    execute_process(COMMAND "${ZF_ROOT_PATH}\\tools\\release\\release_cmake.bat" 1)
-else()
-    execute_process(COMMAND sh "${ZF_ROOT_PATH}/tools/release/release_cmake.sh" 1)
 endif()
 
-file(GLOB_RECURSE ZF_SRC_FILES RELATIVE "${PROJECT_SOURCE_DIR}"
-    "${PROJECT_SOURCE_DIR}/cmake_main.cpp"
-    "${PROJECT_SOURCE_DIR}/../../../zfsrc/*.c"
-    "${PROJECT_SOURCE_DIR}/../../../zfsrc/*.cpp"
-    "${PROJECT_SOURCE_DIR}/../../../zfsrc_ext/*.c"
-    "${PROJECT_SOURCE_DIR}/../../../zfsrc_ext/*.cpp"
+zfprojExec("${ZF_ROOT_PATH}/tools/release/release_cmake" 1)
+include("${PROJECT_SOURCE_DIR}/zfprojConfig.cmake" OPTIONAL)
+
+zfprojSrcFiles(
+    ZF_SRC_FILES
+    "${CMAKE_BINARY_DIR}/zfgensrc_ZFLoader.cpp"
+    "${ZF_ROOT_PATH}"
+    "${PROJECT_SOURCE_DIR}"
+    "${PROJECT_SOURCE_DIR}/../../.."
     )
+list(APPEND ZF_SRC_FILES "${PROJECT_SOURCE_DIR}/cmake_main.cpp")
 if(COMMAND zfprojConfigBefore_ZFLoader)
     zfprojConfigBefore_ZFLoader(ZFLoader ZF_SRC_FILES)
 endif()
@@ -43,11 +41,11 @@ function(ZFAddLib ZF_LIB_NAME_)
         DESTINATION "${PROJECT_BINARY_DIR}/zfdist"
         PATTERN "*.lib" EXCLUDE
         )
-    if(WIN32)
-        execute_process(COMMAND "${ZF_ROOT_PATH}\\tools\\util\\copy_res.bat" "${ZF_ROOT_PATH}\\_release\\cmake\\module\\${ZF_LIB_NAME_}\\zfres\\" "${PROJECT_BINARY_DIR}\\zfdist\\zfres")
-    else()
-        execute_process(COMMAND sh "${ZF_ROOT_PATH}/tools/util/copy_res.sh" "${ZF_ROOT_PATH}/_release/cmake/module/${ZF_LIB_NAME_}/zfres/" "${PROJECT_BINARY_DIR}/zfdist/zfres")
-    endif()
+    install(
+        DIRECTORY "${ZF_ROOT_PATH}/_release/cmake/module/${ZF_LIB_NAME_}/zfres/"
+        DESTINATION "${PROJECT_BINARY_DIR}/zfdist/zfres"
+        PATTERN "ZF_PUT_RES_FILES_HERE" EXCLUDE
+        )
 endfunction()
 
 ZFAddLib(ZFCore)

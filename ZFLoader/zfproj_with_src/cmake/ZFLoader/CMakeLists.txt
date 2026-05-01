@@ -1,42 +1,40 @@
 cmake_minimum_required(VERSION 3.16)
 project(ZFLoader)
-
-if(WIN32)
-    set(CMAKE_WIN32_EXECUTABLE TRUE)
-    execute_process(COMMAND "${PROJECT_SOURCE_DIR}\\..\\..\\..\\..\\zfsetup.bat")
-else()
-    execute_process(COMMAND sh "${PROJECT_SOURCE_DIR}/../../../../zfsetup.sh")
-endif()
-
 set(ZF_ROOT_PATH "${PROJECT_SOURCE_DIR}/../../../../../ZFFramework")
 include("${ZF_ROOT_PATH}/tools/spec/cmake/util.cmake")
 add_compile_options("$<$<CONFIG:DEBUG>:-DDEBUG>")
+if(WIN32)
+    set(CMAKE_WIN32_EXECUTABLE TRUE)
+endif()
+
+zfprojExec("${PROJECT_SOURCE_DIR}/../../../../zfsetup")
 
 set(ZF_SRC_FILES ${ZF_SRC_FILES} "${PROJECT_SOURCE_DIR}/cmake_main.cpp")
 
 function(ZFAddSrc ZF_LIB_NAMES_ LIB_NAME_ ZF_SRC_FILES_ PROJ_PATH_)
     set(${ZF_LIB_NAMES_} ${${ZF_LIB_NAMES_}} ${LIB_NAME_} PARENT_SCOPE)
-    file(GLOB_RECURSE zfprojConfigPath "${PROJ_PATH_}/zfproj/cmake/${LIB_NAME_}/zfprojConfig.cmake")
-    if(NOT "${zfprojConfigPath}" STREQUAL "")
-        include("${zfprojConfigPath}")
+    if(NOT "${ARGV4}" STREQUAL "")
+        include("${ARGV4}/zfprojConfig.cmake" OPTIONAL)
+    else()
+        include("${PROJ_PATH_}/zfproj/cmake/${LIB_NAME_}/zfprojConfig.cmake" OPTIONAL)
     endif()
-
-    file(GLOB_RECURSE ZF_SRC_FILES_TMP RELATIVE "${PROJECT_SOURCE_DIR}"
-        "${PROJ_PATH_}/zfsrc/*.c"
-        "${PROJ_PATH_}/zfsrc/*.cpp"
-        "${PROJ_PATH_}/zfsrc_ext/*.c"
-        "${PROJ_PATH_}/zfsrc_ext/*.cpp"
+    zfprojSrcFiles(
+        ZF_SRC_FILES_TMP
+        "${CMAKE_BINARY_DIR}/zfgensrc_${LIB_NAME_}.cpp"
+        "${ZF_ROOT_PATH}"
+        "${PROJECT_SOURCE_DIR}"
+        "${PROJ_PATH_}"
         )
     set(${ZF_SRC_FILES_} ${${ZF_SRC_FILES_}} ${ZF_SRC_FILES_TMP} PARENT_SCOPE)
     include_directories("${PROJ_PATH_}/zfsrc")
-    if(WIN32)
-        execute_process(COMMAND "${ZF_ROOT_PATH}\\tools\\util\\copy_res.bat" "${PROJ_PATH_}\\zfres\\" "${PROJECT_BINARY_DIR}\\zfdist\\zfres")
-    else()
-        execute_process(COMMAND sh "${ZF_ROOT_PATH}/tools/util/copy_res.sh" "${PROJ_PATH_}/zfres/" "${PROJECT_BINARY_DIR}/zfdist/zfres")
-    endif()
+    install(
+        DIRECTORY "${PROJ_PATH_}/zfres/"
+        DESTINATION "${PROJECT_BINARY_DIR}/zfdist/zfres"
+        PATTERN "ZF_PUT_RES_FILES_HERE" EXCLUDE
+        )
 endfunction()
 
-ZFAddSrc(ZF_LIB_NAMES ZFLoader ZF_SRC_FILES ${PROJECT_SOURCE_DIR}/../../..)
+ZFAddSrc(ZF_LIB_NAMES ZFLoader ZF_SRC_FILES ${PROJECT_SOURCE_DIR}/../../.. ${PROJECT_SOURCE_DIR})
 
 ZFAddSrc(ZF_LIB_NAMES ZFCore ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFCore)
 ZFAddSrc(ZF_LIB_NAMES ZFAlgorithm ZF_SRC_FILES ${ZF_ROOT_PATH}/ZF/ZFAlgorithm)
