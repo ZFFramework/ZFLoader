@@ -3,12 +3,12 @@ apply plugin: 'com.android.application'
 def ZF_ROOT_PATH = file(this.projectDir.absolutePath + '/../../../../../../ZFFramework').absolutePath
 android {
     namespace 'com.ZFFramework.ZFLoader'
-    compileSdk 35
+    compileSdk 37
 
     defaultConfig {
         applicationId 'com.ZFFramework.ZFLoader'
         minSdk 24
-        targetSdk 35
+        targetSdk 37
         versionCode 1
         versionName '0.0.1'
 
