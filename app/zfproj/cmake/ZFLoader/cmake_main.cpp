@@ -25,6 +25,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     LoadLibraryA("ZFLua_impl");
     LoadLibraryA("ZFUIWebKit_impl");
     LoadLibraryA("ZFNet_impl");
+    LoadLibraryA("ZFAd");
+    LoadLibraryA("ZF2DGame");
+    LoadLibraryA("ZFAd_AdMob");
 
     ZFFrameworkInit();
 

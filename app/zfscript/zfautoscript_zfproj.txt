@@ -28,3 +28,8 @@ ZF_IMPL += ZFLua_impl
 ZF_IMPL += ZFUIWebKit_impl
 ZF_IMPL += ZFNet_impl
 
+ZF_LIB_EXT += https://github.com/ZFFramework/ZFAd
+ZF_LIB_EXT += https://github.com/ZFFramework/ZF2DGame
+
+ZF_IMPL_EXT += https://github.com/ZFFramework/ZFAd_AdMob
+

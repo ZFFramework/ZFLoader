@@ -53,4 +53,7 @@ zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFUIKit_impl')
 zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFLua_impl')
 zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFUIWebKit_impl')
 zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFNet_impl')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZFModule', 'ZFAd')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZFModule', 'ZF2DGame')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZFModule', 'ZFAd_AdMob')
 

@@ -17,4 +17,7 @@
 -I../ZFFramework/ZF/ZFLua_impl/zfsrc
 -I../ZFFramework/ZF/ZFUIWebKit_impl/zfsrc
 -I../ZFFramework/ZF/ZFNet_impl/zfsrc
+-I../ZFFramework/ZFModule/ZFAd/zfsrc
+-I../ZFFramework/ZFModule/ZF2DGame/zfsrc
+-I../ZFFramework/ZFModule/ZFAd_AdMob/zfsrc
 

@@ -32,6 +32,9 @@ sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PAT
 sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFLua_impl/zfproj/iOS/ZFLua_impl/zfprojConfig.plist"
 sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFUIWebKit_impl/zfproj/iOS/ZFUIWebKit_impl/zfprojConfig.plist"
 sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFNet_impl/zfproj/iOS/ZFNet_impl/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZFModule/ZFAd/zfproj/iOS/ZFAd/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZFModule/ZF2DGame/zfproj/iOS/ZF2DGame/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZFModule/ZFAd_AdMob/zfproj/iOS/ZFAd_AdMob/zfprojConfig.plist"
 sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "${iOS_SRCROOT}/zfprojConfig.plist"
 mv -f "$PLIST_DST_PATH" "${iOS_SRCROOT}/ProjectFiles/Info.plist"
 
@@ -56,5 +59,8 @@ sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFU
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFLua_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFUIWebKit_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFNet_impl/zfres" "$RES_DST_PATH"
+sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFAd/zfres" "$RES_DST_PATH"
+sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZF2DGame/zfres" "$RES_DST_PATH"
+sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFAd_AdMob/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "${iOS_SRCROOT}/../../../zfres" "$RES_DST_PATH"
 

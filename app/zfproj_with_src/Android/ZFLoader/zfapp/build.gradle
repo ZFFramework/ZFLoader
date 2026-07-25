@@ -64,6 +64,7 @@ android {
             java.srcDirs += ZF_ROOT_PATH + '/ZF/ZFLua_impl/zfsrc/ZFImpl/sys_Android/java'
             java.srcDirs += ZF_ROOT_PATH + '/ZF/ZFUIWebKit_impl/zfsrc/ZFImpl/sys_Android/java'
             java.srcDirs += ZF_ROOT_PATH + '/ZF/ZFNet_impl/zfsrc/ZFImpl/sys_Android/java'
+            java.srcDirs += ZF_ROOT_PATH + '/ZFModule/ZFAd_AdMob/zfsrc/ZFImpl/sys_Android/java'
         }
     }
     externalNativeBuild {
@@ -106,6 +107,9 @@ dependencies {
     zfprojConfig_xml(this.dependencies, ZF_ROOT_PATH, 'ZF', 'ZFLua_impl')
     zfprojConfig_xml(this.dependencies, ZF_ROOT_PATH, 'ZF', 'ZFUIWebKit_impl')
     zfprojConfig_xml(this.dependencies, ZF_ROOT_PATH, 'ZF', 'ZFNet_impl')
+    zfprojConfig_xml(this.dependencies, ZF_ROOT_PATH, 'ZFModule', 'ZFAd')
+    zfprojConfig_xml(this.dependencies, ZF_ROOT_PATH, 'ZFModule', 'ZF2DGame')
+    zfprojConfig_xml(this.dependencies, ZF_ROOT_PATH, 'ZFModule', 'ZFAd_AdMob')
 }
 
 if (file(this.projectDir.absolutePath + '/zfprojConfig/zfprojConfig.gradle').exists()) {
@@ -135,6 +139,9 @@ zfprojConfig_gradle(ZF_ROOT_PATH, 'ZF', 'ZFUIKit_impl')
 zfprojConfig_gradle(ZF_ROOT_PATH, 'ZF', 'ZFLua_impl')
 zfprojConfig_gradle(ZF_ROOT_PATH, 'ZF', 'ZFUIWebKit_impl')
 zfprojConfig_gradle(ZF_ROOT_PATH, 'ZF', 'ZFNet_impl')
+zfprojConfig_gradle(ZF_ROOT_PATH, 'ZFModule', 'ZFAd')
+zfprojConfig_gradle(ZF_ROOT_PATH, 'ZFModule', 'ZF2DGame')
+zfprojConfig_gradle(ZF_ROOT_PATH, 'ZFModule', 'ZFAd_AdMob')
 
 import org.gradle.internal.os.OperatingSystem
 
@@ -192,4 +199,7 @@ ZFCopyRes(tasks, ZF_ROOT_PATH, 'ZF', 'ZFUIKit_impl')
 ZFCopyRes(tasks, ZF_ROOT_PATH, 'ZF', 'ZFLua_impl')
 ZFCopyRes(tasks, ZF_ROOT_PATH, 'ZF', 'ZFUIWebKit_impl')
 ZFCopyRes(tasks, ZF_ROOT_PATH, 'ZF', 'ZFNet_impl')
+ZFCopyRes(tasks, ZF_ROOT_PATH, 'ZFModule', 'ZFAd')
+ZFCopyRes(tasks, ZF_ROOT_PATH, 'ZFModule', 'ZF2DGame')
+ZFCopyRes(tasks, ZF_ROOT_PATH, 'ZFModule', 'ZFAd_AdMob')
 

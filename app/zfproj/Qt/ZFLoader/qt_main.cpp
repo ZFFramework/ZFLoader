@@ -18,6 +18,9 @@ int main(int argc, char **argv) {
     ZFImpl_sys_Qt_requireLib(ZFLua_impl)
     ZFImpl_sys_Qt_requireLib(ZFUIWebKit_impl)
     ZFImpl_sys_Qt_requireLib(ZFNet_impl)
+    ZFImpl_sys_Qt_requireLib(ZFAd)
+    ZFImpl_sys_Qt_requireLib(ZF2DGame)
+    ZFImpl_sys_Qt_requireLib(ZFAd_AdMob)
     return ZFMainEntry_sys_Qt(argc, argv);
 }
 
