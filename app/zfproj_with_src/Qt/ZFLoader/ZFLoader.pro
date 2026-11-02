@@ -61,8 +61,9 @@ DEFINES += ZFLIB_ZFLua_impl=
 DEFINES += ZFLIB_ZFUIWebKit_impl=
 DEFINES += ZFLIB_ZFNet_impl=
 DEFINES += ZFLIB_ZFAd=
-DEFINES += ZFLIB_ZF2DGame=
+DEFINES += ZFLIB_ZFGameKit=
 DEFINES += ZFLIB_ZFAd_AdMob=
+DEFINES += ZFLIB_ZFGameKit_impl=
 
 # ======================================================================
 CONFIG(debug, debug|release) {
@@ -138,8 +139,9 @@ $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 1, ZFLua_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 1, ZFUIWebKit_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 1, ZFNet_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZFModule, 0, ZFAd)
-$$ZFAddLib($${ZF_ROOT_PATH}/ZFModule, 0, ZF2DGame)
+$$ZFAddLib($${ZF_ROOT_PATH}/ZFModule, 0, ZFGameKit)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZFModule, 1, ZFAd_AdMob)
+$$ZFAddLib($${ZF_ROOT_PATH}/ZFModule, 1, ZFGameKit_impl)
 
 
 # ======================================================================

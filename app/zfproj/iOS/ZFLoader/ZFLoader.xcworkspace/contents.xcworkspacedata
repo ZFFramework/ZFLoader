@@ -62,9 +62,12 @@
       location = "group:../../../../../ZFFramework/_release/iOS/module/ZFAd/ZFAd_zfprojConfig.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../../ZFFramework/_release/iOS/module/ZF2DGame/ZF2DGame_zfprojConfig.xcodeproj">
+      location = "group:../../../../../ZFFramework/_release/iOS/module/ZFGameKit/ZFGameKit_zfprojConfig.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../../../ZFFramework/_release/iOS/module/ZFAd_AdMob/ZFAd_AdMob_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/_release/iOS/module/ZFGameKit_impl/ZFGameKit_impl_zfprojConfig.xcodeproj">
    </FileRef>
 </Workspace>

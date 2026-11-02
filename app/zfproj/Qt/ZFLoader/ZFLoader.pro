@@ -117,8 +117,9 @@ $$ZFAddLib(1, ZFLua_impl)
 $$ZFAddLib(1, ZFUIWebKit_impl)
 $$ZFAddLib(1, ZFNet_impl)
 $$ZFAddLib(0, ZFAd)
-$$ZFAddLib(0, ZF2DGame)
+$$ZFAddLib(0, ZFGameKit)
 $$ZFAddLib(1, ZFAd_AdMob)
+$$ZFAddLib(1, ZFGameKit_impl)
 
 
 # ======================================================================

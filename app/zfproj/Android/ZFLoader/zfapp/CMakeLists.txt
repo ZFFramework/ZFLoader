@@ -51,6 +51,7 @@ ZFAddLib(ZFLua_impl)
 ZFAddLib(ZFUIWebKit_impl)
 ZFAddLib(ZFNet_impl)
 ZFAddLib(ZFAd)
-ZFAddLib(ZF2DGame)
+ZFAddLib(ZFGameKit)
 ZFAddLib(ZFAd_AdMob)
+ZFAddLib(ZFGameKit_impl)
 

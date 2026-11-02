@@ -11,7 +11,6 @@
 		22320FC25003A65535427FEEEC6E3A95 /* ZFUIKit_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97ADD53E4F745B30650646E808F27C8A /* ZFUIKit_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2408587BF668115723C68CCE9DB80A51 /* zfgensrc_ZFUIKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71239057A1673135B27F47EE780C80B6 /* zfgensrc_ZFUIKit.mm */; };
 		24C04D9B12D6A8073068F79263CA0130 /* ZFUIExt_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24C22607636678F0FD91EE30B803C3A /* ZFUIExt_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		25D8085FD4CD518D5A425BECDA2A07D3 /* ZF2DGame_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650C4F5455194F835EB4A618C571473C /* ZF2DGame_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		26C456A03AC71A3AF04EDF567E8BFA0A /* zfgensrc_ZFUIWebKit_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC6F812D70F9CD4D6F883BE214D98EA3 /* zfgensrc_ZFUIWebKit_impl.mm */; };
 		27C38F22E7215B90AE5DE8B3BFC445DA /* zfgensrc_ZFCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = D18411F24200DB06B6457139AAF43D9E /* zfgensrc_ZFCore.mm */; };
 		2819F55FAD94A0CE7D82E75C38540DA0 /* ZFNet_impl_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0750613B29BE2DBE653022A8BEF7D5 /* ZFNet_impl_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -26,6 +25,7 @@
 		62A5D616DE65752E41CCDF9617C782C9 /* ZFUIWidget_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4E3CA40312EF3260E4C40419FA6FF /* ZFUIWidget_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		62E30AC56E7C17154A012E80BBBA7E17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23775675371E613A438268BC6381CB56 /* QuartzCore.framework */; };
 		6D4081FD093815847E94B5C15ECFC686 /* zfgensrc_ZFNet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D1FB4EC38EC7EE536B409FC417946 /* zfgensrc_ZFNet.mm */; };
+		71CDF005D8573520901854F8C62889A9 /* zfgensrc_ZFGameKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5067F25D015579ECBD13EFC8C02E364 /* zfgensrc_ZFGameKit.mm */; };
 		74594D7BBB66E2DD7C14BB8434633F76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48034E24D59344F93D45AC9663EE3AF3 /* UIKit.framework */; };
 		7B6D422475313BE61A82D56488909E25 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07FA48E4A67234AB68E10B90222C4D82 /* AppDelegate.mm */; };
 		7D0673501B5DC567FC85A004E1B868F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE6690B09CAAE0584B9A58039F67598 /* Assets.xcassets */; };
@@ -34,13 +34,16 @@
 		87B86C902756770440DA9BC8AC19C4AD /* ZFAd_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05424542B933C97090ED0D1DCE095A5D /* ZFAd_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8B9E9F0F6622FC4D32E1EBF109541175 /* ZFNet_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DB460A5EA24F31E7FE4647256EEDB7 /* ZFNet_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8C3988BA5B256A30C07D4FA9831A96C4 /* ZFAd_AdMob_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0650BAF06B766866CA69955FB87577B7 /* ZFAd_AdMob_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9132093ABE363DDEE52910FDF1A92AF8 /* ZFGameKit_impl_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9667E21255F6E9F5548FCCE90A9CE89 /* ZFGameKit_impl_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		91B916D527414B768CB44587608D673C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAC11B5A6698ACF13C67EAF77EE72F7 /* CoreGraphics.framework */; };
 		9309645E5662551FA86FFD6B2117764F /* ZFLua_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF6958D32CF0742FE417575AF0F9CAF /* ZFLua_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		96C9DF74319EA5C48F59B5653817B7C4 /* ZFGameKit_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E2B7BC029C69F56BBF6E4972363033 /* ZFGameKit_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		97B59A1DEADD6BFFD63E109D6E47F2E0 /* ZFUIWebKit_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE9F6D04BE79B61B00BB773B2B369E3 /* ZFUIWebKit_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9E7B622479689319DB9F48A469233636 /* zfgensrc_ZFUIKit_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 335476CED6276F1B031EE2A0802B3948 /* zfgensrc_ZFUIKit_impl.mm */; };
 		A5F56D7CDA958BC8F7602CCCC9082523 /* ZFCore_impl_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF5EF52A312A488D1D711655A7DD101 /* ZFCore_impl_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A75580FE172F4AEC2283E61013A4561C /* ZFCore_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8132E80802510B2859A8E1D96BF992 /* ZFCore_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AA52EA4A321706FDB6D8510280EAFFFA /* zfgensrc_ZFCore_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = E702AA6BD0D58B6586C1C0FAB4502048 /* zfgensrc_ZFCore_impl.mm */; };
+		AC6C1994E0CAD73C3823BCAA3B73CF2F /* zfgensrc_ZFGameKit_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 82EF7A34CD4EEFE5597EEB0BECE46E15 /* zfgensrc_ZFGameKit_impl.mm */; };
 		B3B7B47A4892850166128A783C00F9B8 /* zfgensrc_ZFUtility.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15E7B9285194E7B219FB2EE153DA93F8 /* zfgensrc_ZFUtility.mm */; };
 		B5BBC315B8896000B0315E6EDAD57F3D /* zfgensrc_ZFLua.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47C75D1038E80D606FAF1DC5F766D0AE /* zfgensrc_ZFLua.mm */; };
 		C9927559AB443DB1262C5583C7D2CADC /* ZFLua_impl_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4338A69B41B167F68F8D7BC04EDB3C38 /* ZFLua_impl_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -50,7 +53,6 @@
 		D7075639C9DCD285433BE681E4E2C3AD /* zfgensrc_ZFAd.mm in Sources */ = {isa = PBXBuildFile; fileRef = 491DEC02083A22644CB0B8166204563B /* zfgensrc_ZFAd.mm */; };
 		D867512480E090221C01632653CBD82F /* zfgensrc_ZFAlgorithm_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87CA42B6F2E8153E0EBD98FA421A3F40 /* zfgensrc_ZFAlgorithm_impl.mm */; };
 		D9E62B7A6455EC769DD9BB87842F250F /* zfgensrc_ZFAlgorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6298F54D4111C8CBC34F329C200EEA7D /* zfgensrc_ZFAlgorithm.mm */; };
-		DD7B7FEDBC542A04CCCB91DB0F0B9F2E /* zfgensrc_ZF2DGame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 290D06C4DCB34656331149C9B27B8DCE /* zfgensrc_ZF2DGame.mm */; };
 		E31F6A477449E5A62D0DDEF22D5BA89F /* zfgensrc_ZFUIWidget.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65F6648233B3B34C5D9D461E51FFC0D8 /* zfgensrc_ZFUIWidget.mm */; };
 		EB9DFF8EAFA9C99DC7167FEE99554B90 /* ZFUtility_zfprojConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF910D8FD6BC0CCE8205074F6B332D2 /* ZFUtility_zfprojConfig.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EF0742AAD97BFCDB7FDECB8BF2C5AC72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F208FB312AC07704841F43CFDF71B184 /* main.m */; };
@@ -70,7 +72,6 @@
 		07FA48E4A67234AB68E10B90222C4D82 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		15E7B9285194E7B219FB2EE153DA93F8 /* zfgensrc_ZFUtility.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUtility.mm; sourceTree = "<group>"; };
 		23775675371E613A438268BC6381CB56 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		290D06C4DCB34656331149C9B27B8DCE /* zfgensrc_ZF2DGame.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZF2DGame.mm; sourceTree = "<group>"; };
 		2CF4E3CA40312EF3260E4C40419FA6FF /* ZFUIWidget_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFUIWidget_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A218A45EDC4122AE3B098A68CC74A5 /* zfgensrc_ZF_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZF_impl.mm; sourceTree = "<group>"; };
 		335476CED6276F1B031EE2A0802B3948 /* zfgensrc_ZFUIKit_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIKit_impl.mm; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		52FE312703628B9163122890E554BCAE /* zfsrc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zfsrc; path = ../../../zfsrc; sourceTree = "<group>"; };
 		5360446520FA27EF4D2BA33605E9BD98 /* ZFAppUtil_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFAppUtil_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6298F54D4111C8CBC34F329C200EEA7D /* zfgensrc_ZFAlgorithm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFAlgorithm.mm; sourceTree = "<group>"; };
-		650C4F5455194F835EB4A618C571473C /* ZF2DGame_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZF2DGame_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EDC7309E457AC9A992F474829874DD /* ZFLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F6648233B3B34C5D9D461E51FFC0D8 /* zfgensrc_ZFUIWidget.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIWidget.mm; sourceTree = "<group>"; };
 		66BFB6E92C9E19DAF9ED715879739412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,14 +94,17 @@
 		7E0750613B29BE2DBE653022A8BEF7D5 /* ZFNet_impl_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFNet_impl_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2D1FB4EC38EC7EE536B409FC417946 /* zfgensrc_ZFNet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFNet.mm; sourceTree = "<group>"; };
 		7F63C9283BE4557967B3B7E62A45F542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		82EF7A34CD4EEFE5597EEB0BECE46E15 /* zfgensrc_ZFGameKit_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFGameKit_impl.mm; sourceTree = "<group>"; };
 		87CA42B6F2E8153E0EBD98FA421A3F40 /* zfgensrc_ZFAlgorithm_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFAlgorithm_impl.mm; sourceTree = "<group>"; };
 		97ADD53E4F745B30650646E808F27C8A /* ZFUIKit_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFUIKit_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0B6140125933DE4CE1812F294424A8 /* ZFAlgorithm_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFAlgorithm_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9AD230AA3677D00BBF3775C1600626 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A360A8B94D14E6BEEF2DE0D9EBF265D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4A7B69E2B7497839DD917403033135F /* zfgensrc_ZFUIExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIExt.mm; sourceTree = "<group>"; };
+		A9667E21255F6E9F5548FCCE90A9CE89 /* ZFGameKit_impl_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFGameKit_impl_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB21E377BC2CF3A838FF2662AF04E5E5 /* ZFUIWebKit_impl_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFUIWebKit_impl_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40BDDBBC499E2C378BC57952CBEB445 /* zfgensrc_ZFAd_AdMob.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFAd_AdMob.mm; sourceTree = "<group>"; };
+		B5067F25D015579ECBD13EFC8C02E364 /* zfgensrc_ZFGameKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFGameKit.mm; sourceTree = "<group>"; };
 		B631FB2BFB1B573AC6F3E5145C7EF1DF /* ZF_impl_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZF_impl_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71ED3211AE7A922B9B09CF92693CEDD /* zfgensrc_ZFNet_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFNet_impl.mm; sourceTree = "<group>"; };
 		BF00779897D90216B17958436DD03AD5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 		DDF5EF52A312A488D1D711655A7DD101 /* ZFCore_impl_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFCore_impl_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF6958D32CF0742FE417575AF0F9CAF /* ZFLua_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFLua_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E5E2B7BC029C69F56BBF6E4972363033 /* ZFGameKit_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFGameKit_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E664BDDF8152C5B2508C88D2162CB5A2 /* zfgensrc_ZFLua_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFLua_impl.mm; sourceTree = "<group>"; };
 		E702AA6BD0D58B6586C1C0FAB4502048 /* zfgensrc_ZFCore_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFCore_impl.mm; sourceTree = "<group>"; };
 		ECE9F6D04BE79B61B00BB773B2B369E3 /* ZFUIWebKit_zfprojConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZFUIWebKit_zfprojConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,8 +148,9 @@
 		1241CBB18AE5A7C8BA2A796AE3223825 /* zfsrc_ext */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); name = zfsrc_ext; path = ../../../../../ZFFramework/ZF/ZFUIWebKit_impl/zfsrc_ext; sourceTree = SOURCE_ROOT; };
 		17A985E32BDD2246C6F27717D8A72EA6 /* zfsrc_ext */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); name = zfsrc_ext; path = ../../../../../ZFFramework/ZF/ZFNet_impl/zfsrc_ext; sourceTree = SOURCE_ROOT; };
 		07084D6ECA55342F094E63555D097F91 /* zfsrc_ext */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); name = zfsrc_ext; path = ../../../../../ZFFramework/ZFModule/ZFAd/zfsrc_ext; sourceTree = SOURCE_ROOT; };
-		1DAAD59BBC690080036A6069957135EF /* zfsrc_ext */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); name = zfsrc_ext; path = ../../../../../ZFFramework/ZFModule/ZF2DGame/zfsrc_ext; sourceTree = SOURCE_ROOT; };
+		94314AB792CD6DF9EFE74C3A885F3EBC /* zfsrc_ext */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); name = zfsrc_ext; path = ../../../../../ZFFramework/ZFModule/ZFGameKit/zfsrc_ext; sourceTree = SOURCE_ROOT; };
 		13ED3196121B5CB3901211194DEDCD35 /* zfsrc_ext */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); name = zfsrc_ext; path = ../../../../../ZFFramework/ZFModule/ZFAd_AdMob/zfsrc_ext; sourceTree = SOURCE_ROOT; };
+		2BF860721A35E607FCBCDE55547777EE /* zfsrc_ext */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); name = zfsrc_ext; path = ../../../../../ZFFramework/ZFModule/ZFGameKit_impl/zfsrc_ext; sourceTree = SOURCE_ROOT; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +164,6 @@
 				62E30AC56E7C17154A012E80BBBA7E17 /* QuartzCore.framework in Frameworks */,
 				74594D7BBB66E2DD7C14BB8434633F76 /* UIKit.framework in Frameworks */,
 				4EDB4E413312932C9770587844FD288E /* WebKit.framework in Frameworks */,
-				25D8085FD4CD518D5A425BECDA2A07D3 /* ZF2DGame_zfprojConfig.framework in Frameworks */,
 				8C3988BA5B256A30C07D4FA9831A96C4 /* ZFAd_AdMob_zfprojConfig.framework in Frameworks */,
 				87B86C902756770440DA9BC8AC19C4AD /* ZFAd_zfprojConfig.framework in Frameworks */,
 				C999282A99CEC942D4DFAC6F4B322477 /* ZFAlgorithm_impl_zfprojConfig.framework in Frameworks */,
@@ -167,6 +171,8 @@
 				4E5E93273780BD9F68514A9958D7D793 /* ZFAppUtil_zfprojConfig.framework in Frameworks */,
 				A5F56D7CDA958BC8F7602CCCC9082523 /* ZFCore_impl_zfprojConfig.framework in Frameworks */,
 				A75580FE172F4AEC2283E61013A4561C /* ZFCore_zfprojConfig.framework in Frameworks */,
+				9132093ABE363DDEE52910FDF1A92AF8 /* ZFGameKit_impl_zfprojConfig.framework in Frameworks */,
+				96C9DF74319EA5C48F59B5653817B7C4 /* ZFGameKit_zfprojConfig.framework in Frameworks */,
 				471E38CB5A7610E7A56B9DE62BD95C6D /* ZFLoader_zfprojConfig.framework in Frameworks */,
 				C9927559AB443DB1262C5583C7D2CADC /* ZFLua_impl_zfprojConfig.framework in Frameworks */,
 				9309645E5662551FA86FFD6B2117764F /* ZFLua_zfprojConfig.framework in Frameworks */,
@@ -357,13 +363,13 @@
 			path = ZFAd;
 			sourceTree = "<group>";
 		};
-		E57614AB300A606AE14A7A7CDDC8250E /* ZF2DGame */ = {
+		C122161A15403802E53CBFFC0523A2C6 /* ZFGameKit */ = {
 			isa = PBXGroup;
 			children = (
-				1DAAD59BBC690080036A6069957135EF /* zfsrc_ext */,
-				290D06C4DCB34656331149C9B27B8DCE /* zfgensrc_ZF2DGame.mm */,
+				94314AB792CD6DF9EFE74C3A885F3EBC /* zfsrc_ext */,
+				B5067F25D015579ECBD13EFC8C02E364 /* zfgensrc_ZFGameKit.mm */,
 			);
-			path = ZF2DGame;
+			path = ZFGameKit;
 			sourceTree = "<group>";
 		};
 		4654ABB67B8A90AAB7537D2E0D63FD0C /* ZFAd_AdMob */ = {
@@ -375,10 +381,18 @@
 			path = ZFAd_AdMob;
 			sourceTree = "<group>";
 		};
+		8E6FBFA997085164411E87B37C556D73 /* ZFGameKit_impl */ = {
+			isa = PBXGroup;
+			children = (
+				2BF860721A35E607FCBCDE55547777EE /* zfsrc_ext */,
+				82EF7A34CD4EEFE5597EEB0BECE46E15 /* zfgensrc_ZFGameKit_impl.mm */,
+			);
+			path = ZFGameKit_impl;
+			sourceTree = "<group>";
+		};
 		8BE08B2C94DD1FA5E785311B5BF25FF5 /* ProjectFiles */ = {
 			isa = PBXGroup;
 			children = (
-				E57614AB300A606AE14A7A7CDDC8250E /* ZF2DGame */,
 				A6E7816A1373CD0F4795976D02101C72 /* ZFAd */,
 				4654ABB67B8A90AAB7537D2E0D63FD0C /* ZFAd_AdMob */,
 				ED07EBB5BADD99556643270ADD6C4107 /* ZFAlgorithm */,
@@ -386,6 +400,8 @@
 				EA66121E39245D8EF2360C80B62FD372 /* ZFAppUtil */,
 				96F06FA45C9636FD34FC1973D8913D54 /* ZFCore */,
 				89DB86613E40AC2669CD23CF171A1F12 /* ZFCore_impl */,
+				C122161A15403802E53CBFFC0523A2C6 /* ZFGameKit */,
+				8E6FBFA997085164411E87B37C556D73 /* ZFGameKit_impl */,
 				590B04343B29171B57F899F6A460319E /* ZFLua */,
 				BD36772D471594712DBC956894C903AC /* ZFLua_impl */,
 				8A2D72E19FD3C790F0E90769DC83EBFC /* ZFNet */,
@@ -429,7 +445,6 @@
 				23775675371E613A438268BC6381CB56 /* QuartzCore.framework */,
 				48034E24D59344F93D45AC9663EE3AF3 /* UIKit.framework */,
 				E17931A121D7DDA29C1357B8C3ADC03E /* WebKit.framework */,
-				650C4F5455194F835EB4A618C571473C /* ZF2DGame_zfprojConfig.framework */,
 				0650BAF06B766866CA69955FB87577B7 /* ZFAd_AdMob_zfprojConfig.framework */,
 				05424542B933C97090ED0D1DCE095A5D /* ZFAd_zfprojConfig.framework */,
 				7B04A24C0AFF4E1E4F3D0B8E74BDC561 /* ZFAlgorithm_impl_zfprojConfig.framework */,
@@ -437,6 +452,8 @@
 				5360446520FA27EF4D2BA33605E9BD98 /* ZFAppUtil_zfprojConfig.framework */,
 				DDF5EF52A312A488D1D711655A7DD101 /* ZFCore_impl_zfprojConfig.framework */,
 				ED8132E80802510B2859A8E1D96BF992 /* ZFCore_zfprojConfig.framework */,
+				A9667E21255F6E9F5548FCCE90A9CE89 /* ZFGameKit_impl_zfprojConfig.framework */,
+				E5E2B7BC029C69F56BBF6E4972363033 /* ZFGameKit_zfprojConfig.framework */,
 				F43A7BF7CE2291457F3003D4B05007D1 /* ZFLoader_zfprojConfig.framework */,
 				4338A69B41B167F68F8D7BC04EDB3C38 /* ZFLua_impl_zfprojConfig.framework */,
 				DFF6958D32CF0742FE417575AF0F9CAF /* ZFLua_zfprojConfig.framework */,
@@ -501,8 +518,9 @@
 				1241CBB18AE5A7C8BA2A796AE3223825 /* zfsrc_ext */,
 				17A985E32BDD2246C6F27717D8A72EA6 /* zfsrc_ext */,
 				07084D6ECA55342F094E63555D097F91 /* zfsrc_ext */,
-				1DAAD59BBC690080036A6069957135EF /* zfsrc_ext */,
+				94314AB792CD6DF9EFE74C3A885F3EBC /* zfsrc_ext */,
 				13ED3196121B5CB3901211194DEDCD35 /* zfsrc_ext */,
+				2BF860721A35E607FCBCDE55547777EE /* zfsrc_ext */,
 			);
 			name = ZFLoader;
 			productName = ZFLoader;
@@ -586,8 +604,9 @@
 				"$(SRCROOT)/ProjectFiles/ZFUIWebKit_impl/zfgensrc_ZFUIWebKit_impl.mm",
 				"$(SRCROOT)/ProjectFiles/ZFNet_impl/zfgensrc_ZFNet_impl.mm",
 				"$(SRCROOT)/ProjectFiles/ZFAd/zfgensrc_ZFAd.mm",
-				"$(SRCROOT)/ProjectFiles/ZF2DGame/zfgensrc_ZF2DGame.mm",
+				"$(SRCROOT)/ProjectFiles/ZFGameKit/zfgensrc_ZFGameKit.mm",
 				"$(SRCROOT)/ProjectFiles/ZFAd_AdMob/zfgensrc_ZFAd_AdMob.mm",
+				"$(SRCROOT)/ProjectFiles/ZFGameKit_impl/zfgensrc_ZFGameKit_impl.mm",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -618,7 +637,6 @@
 				7B6D422475313BE61A82D56488909E25 /* AppDelegate.mm in Sources */,
 				EFDC02DE5A81443A761B35F93E4C8529 /* RootViewController.m in Sources */,
 				EF0742AAD97BFCDB7FDECB8BF2C5AC72 /* main.m in Sources */,
-				DD7B7FEDBC542A04CCCB91DB0F0B9F2E /* zfgensrc_ZF2DGame.mm in Sources */,
 				D7075639C9DCD285433BE681E4E2C3AD /* zfgensrc_ZFAd.mm in Sources */,
 				CFA2582677161C6B9BA26AFA17D7ADB9 /* zfgensrc_ZFAd_AdMob.mm in Sources */,
 				D9E62B7A6455EC769DD9BB87842F250F /* zfgensrc_ZFAlgorithm.mm in Sources */,
@@ -626,6 +644,8 @@
 				4E40EA1CF159EB5AB4D0DCE6BFA2B5F6 /* zfgensrc_ZFAppUtil.mm in Sources */,
 				27C38F22E7215B90AE5DE8B3BFC445DA /* zfgensrc_ZFCore.mm in Sources */,
 				AA52EA4A321706FDB6D8510280EAFFFA /* zfgensrc_ZFCore_impl.mm in Sources */,
+				71CDF005D8573520901854F8C62889A9 /* zfgensrc_ZFGameKit.mm in Sources */,
+				AC6C1994E0CAD73C3823BCAA3B73CF2F /* zfgensrc_ZFGameKit_impl.mm in Sources */,
 				F5D8ABA92A4BE51070ACDB7E8A63637C /* zfgensrc_ZFLoader.mm in Sources */,
 				B5BBC315B8896000B0315E6EDAD57F3D /* zfgensrc_ZFLua.mm in Sources */,
 				EF3D7ECC39D2C59D6145E38B9B5F8941 /* zfgensrc_ZFLua_impl.mm in Sources */,
@@ -690,8 +710,9 @@
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWebKit_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFNet_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFAd/zfsrc",
-					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZF2DGame/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFGameKit/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFAd_AdMob/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFGameKit_impl/zfsrc",
 				);
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};
@@ -742,8 +763,9 @@
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWebKit_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFNet_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFAd/zfsrc",
-					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZF2DGame/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFGameKit/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFAd_AdMob/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFGameKit_impl/zfsrc",
 				);
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};
