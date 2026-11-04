@@ -13,6 +13,14 @@ static void _ZFLoaderEntry(void) {
     ZFResExtPathAdd(ZFPathInfo(ZFPathType_file(), ZFPathForStorageShared()));
     ZFLogTrim() << "external res: " << ZFResExtPathList();
 
+    {
+        zfauto ret = zfimport("zf.lua");
+        v_zfbool *t = ret;
+        if(t && t->zfv) {
+            return;
+        }
+    }
+
     zfobj<ZFUIWindow> w;
     ZFUIOnScreenKeyboardAutoResizeStart(w);
     w->show();
@@ -79,10 +87,6 @@ static void _ZFLoaderEntry(void) {
         }
     } ZFLISTENER_END()
     btn->onClick(onClick);
-
-    if(ZFResIsExist("zf.lua")) {
-        zfimport("zf.lua");
-    }
 }
 
 ZFMAIN_ENTRY() {
